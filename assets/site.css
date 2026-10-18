@@ -1,0 +1,161 @@
+/* Orizo Labs — спільні стилі сайту */
+:root{
+  --night:#14213D;      /* небо до світанку, основний текст */
+  --night-2:#1C2C50;
+  --dawn:#F2C200;       /* сонце */
+  --blue:#1F4FD1;
+  --mist:#F6F7FB;       /* світлий фон */
+  --paper:#FFFFFF;
+  --ink-soft:#4A5568;
+  --line:#DCE2F0;
+  --on-night:#F6F7FB;
+  --on-night-soft:#BFC9E3;
+  --head:"Rubik",system-ui,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1120px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--mist);color:var(--night);font-family:var(--body);font-size:18px;line-height:1.6}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--blue);text-underline-offset:3px}
+a:hover{color:var(--night)}
+:focus-visible{outline:3px solid var(--dawn);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--dawn);color:var(--night);padding:8px 14px;border-radius:8px;z-index:10}
+.skip:focus{left:16px}
+
+/* шапка */
+.top{position:absolute;inset:0 0 auto 0;z-index:3}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:84px}
+.top .logo img{height:34px;width:auto}
+.top nav{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.top nav a{color:var(--on-night);text-decoration:none;font-weight:500;font-size:16px;padding:10px 12px;border-radius:10px;min-height:44px;display:inline-flex;align-items:center}
+.top nav a:hover{background:rgba(255,255,255,.08);color:#fff}
+.top nav a[aria-current="page"]{color:var(--dawn)}
+
+/* герой: небо, обрій і сонце, що сходить */
+.sky{position:relative;background:var(--night);color:var(--on-night);overflow:hidden;padding:168px 0 0}
+.sky .wrap{position:relative;z-index:2}
+.sky h1{font-size:clamp(48px,8.4vw,112px);font-weight:700;letter-spacing:-.02em;max-width:9.5em}
+.sky .lead{margin-top:24px;font-size:clamp(19px,2vw,22px);line-height:1.5;color:var(--on-night-soft);max-width:34em}
+.sky .actions{margin-top:36px;display:flex;flex-wrap:wrap;gap:12px}
+.horizon{position:relative;height:clamp(150px,22vw,260px);margin-top:56px}
+.sun{position:absolute;left:62%;bottom:0;width:clamp(200px,30vw,380px);aspect-ratio:1;border-radius:50%;background:var(--dawn);transform:translate(-50%,58%);animation:rise 1.6s cubic-bezier(.2,.7,.2,1) .2s both}
+.horizon::after{content:"";position:absolute;left:0;right:0;bottom:0;height:14px;background:var(--mist)}
+.sky-plain{padding-bottom:72px}
+@keyframes rise{from{transform:translate(-50%,100%)}to{transform:translate(-50%,58%)}}
+@media (prefers-reduced-motion:reduce){.sun{animation:none}}
+
+/* кнопки */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;border-radius:14px;font-family:var(--head);font-weight:600;font-size:18px;text-decoration:none;border:2px solid transparent}
+.btn-sun{background:var(--dawn);color:var(--night)}
+.btn-sun:hover{background:#FFD52E;color:var(--night)}
+.btn-ghost{color:var(--on-night);border-color:rgba(246,247,251,.35)}
+.btn-ghost:hover{border-color:var(--on-night);color:#fff}
+.btn-night{background:var(--night);color:var(--on-night)}
+.btn-night:hover{background:var(--blue);color:#fff}
+
+/* розділи */
+.section{padding:104px 0}
+.section h2{font-size:clamp(34px,4.6vw,56px);font-weight:700;letter-spacing:-.01em;max-width:16em}
+.section .intro{margin-top:18px;color:var(--ink-soft);max-width:36em;font-size:20px}
+
+/* шлях продуктів уздовж обрію: це справжня послідовність у часі */
+.path{list-style:none;margin:64px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;position:relative}
+.path::before{content:"";position:absolute;left:0;right:0;top:11px;height:2px;background:var(--line)}
+.path li{position:relative;padding-top:44px}
+.path li::before{content:"";position:absolute;top:0;left:0;width:24px;height:24px;border-radius:50%;background:var(--paper);border:2px solid var(--line)}
+.path li.now::before{background:var(--dawn);border-color:var(--dawn)}
+.path .when{font-family:var(--head);font-weight:600;font-size:15px;color:var(--blue)}
+.path li.now .when{color:#8A6D00}
+.path h3{font-size:24px;font-weight:600;margin-top:6px}
+.path p{margin-top:10px;color:var(--ink-soft);font-size:17px}
+
+/* продукт */
+.product{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.product .grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:64px;align-items:center}
+.facts{list-style:none;margin:32px 0 0;padding:0}
+.facts li{padding:14px 0;border-top:1px solid var(--line);display:flex;gap:16px;align-items:baseline}
+.facts li:last-child{border-bottom:1px solid var(--line)}
+.facts b{font-family:var(--head);font-weight:600;min-width:6.5em;font-size:19px}
+.facts span{color:var(--ink-soft)}
+.product .actions{margin-top:32px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.soon{color:var(--ink-soft);font-size:16px}
+.shots{display:flex;gap:18px;justify-content:center}
+.shots img{width:calc(50% - 9px);max-width:270px;border-radius:22px;box-shadow:0 24px 60px rgba(20,33,61,.18)}
+.shots img:nth-child(2){margin-top:56px}
+
+/* принципи */
+.principles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 64px;margin-top:56px}
+.principles h3{font-size:30px;font-weight:600}
+.principles p{margin-top:10px;color:var(--ink-soft)}
+
+/* для партнерів */
+.partners{background:var(--night);color:var(--on-night)}
+.partners .grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:56px;align-items:end}
+.partners h2{color:var(--on-night)}
+.partners .intro{color:var(--on-night-soft)}
+.contact-card{border-left:4px solid var(--dawn);padding:4px 0 4px 24px}
+.contact-card p{color:var(--on-night-soft)}
+.contact-card .name{font-family:var(--head);font-weight:600;font-size:22px;color:var(--on-night)}
+.contact-card a{color:var(--dawn);font-weight:500}
+.contact-card .btn{margin-top:24px}
+.contact-card a.btn-sun{color:var(--night)}
+
+/* підвал */
+.foot{background:var(--night);color:var(--on-night-soft);border-top:1px solid rgba(246,247,251,.12);padding:40px 0 48px;font-size:16px}
+.foot .wrap{display:flex;flex-wrap:wrap;gap:24px 48px;align-items:center;justify-content:space-between}
+.foot img{height:26px;width:auto}
+.foot nav{display:flex;flex-wrap:wrap;gap:4px 20px}
+.foot a{color:var(--on-night);text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.foot a:hover{color:var(--dawn)}
+
+/* текстові сторінки (приватність, підтримка) */
+.doc{padding:72px 0 96px}
+.doc .wrap{max-width:760px}
+.doc h2{font-size:26px;font-weight:600;margin:40px 0 10px}
+.doc p,.doc li{color:#2E3A55}
+.doc p+p{margin-top:12px}
+.doc .lang{display:flex;gap:16px;margin:8px 0 8px}
+
+/* сторінка продукту */
+.langs{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.langs span{background:rgba(246,247,251,.1);border:1px solid rgba(246,247,251,.2);border-radius:999px;padding:8px 16px;font-weight:500;font-size:16px}
+.cols3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-top:56px}
+.cols3 img{border-radius:22px;box-shadow:0 20px 50px rgba(20,33,61,.16);margin-bottom:24px}
+.cols3 h3{font-size:24px;font-weight:600}
+.cols3 p{margin-top:8px;color:var(--ink-soft)}
+.plans{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:48px}
+.plan{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:28px 32px}
+.plan.plus{border:2px solid var(--night)}
+.plan h3{font-size:26px;font-weight:600}
+.plan ul{margin:16px 0 0;padding-left:20px;color:#2E3A55}
+.plan li+li{margin-top:6px}
+.faq{margin-top:40px;max-width:780px}
+.faq details{border-top:1px solid var(--line);padding:18px 0}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{font-family:var(--head);font-weight:600;font-size:20px;cursor:pointer;min-height:32px}
+.faq details p{margin-top:10px;color:var(--ink-soft)}
+
+@media (max-width:900px){
+  .path{grid-template-columns:minmax(0,1fr);gap:28px}
+  .path::before{left:11px;right:auto;top:0;bottom:0;width:2px;height:auto}
+  .path li{padding:0 0 0 48px}
+  .product .grid,.partners .grid{grid-template-columns:minmax(0,1fr);gap:48px}
+  .principles,.cols3,.plans{grid-template-columns:minmax(0,1fr)}
+  .section{padding:80px 0}
+}
+@media (max-width:600px){
+  body{font-size:17px}
+  .wrap{padding:0 16px}
+  .top .wrap{height:72px}
+  .top .logo img{height:28px}
+  .top nav a{padding:10px 8px;font-size:15px}
+  .top nav a.hide-sm{display:none}
+  .sky{padding-top:128px}
+  .facts li{flex-direction:column;gap:2px}
+  .sun{left:68%}
+}
