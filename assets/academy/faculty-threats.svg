@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100">
+  <ellipse cx="96" cy="90" rx="30" ry="3" fill="#15233B" fill-opacity="0.08"/>
+  <!-- хвилі тривоги -->
+  <g fill="none" stroke="#F2B544" stroke-width="3" stroke-linecap="round">
+    <path d="M128 26 q8 8 0 16"/>
+    <path d="M136 20 q14 14 0 28"/>
+    <path d="M64 26 q-8 8 0 16"/>
+    <path d="M56 20 q-14 14 0 28"/>
+  </g>
+  <g stroke="#15233B" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+    <!-- щит -->
+    <path d="M96 10 L126 20 V46 C126 66 112 80 96 88 C80 80 66 66 66 46 V20 Z" fill="#8A5A12"/>
+    <path d="M96 18 L118 25 V46 C118 61 108 72 96 79 Z" fill="#C9A26B" stroke="none"/>
+    <!-- сирена -->
+    <path d="M84 62 v-12 a12 12 0 0 1 24 0 v12 z" fill="#F2B544"/>
+    <rect x="80" y="62" width="32" height="8" rx="3" fill="#FFFFFF"/>
+    <path d="M91 50 a5 5 0 0 1 5 -5" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+  </g>
+</svg>

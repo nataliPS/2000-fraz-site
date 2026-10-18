@@ -22,15 +22,17 @@
 .app-head p{color:var(--on-night-soft);font-size:17px}
 </style>
 </head>
-<body>
+<body class="p-2000">
 <a class="skip" href="#main">Перейти до змісту</a>
 <header class="top">
   <div class="wrap">
-    <a class="logo" href="../" aria-label="Orizo Labs, головна"><img src="../assets/orizo-logo-white.svg" alt="Orizo" width="529" height="148"></a>
+    <div class="crumb">
+      <a class="logo" href="../" aria-label="Orizo Labs, головна"><img src="../assets/orizo-logo-white.svg" alt="Orizo" width="529" height="148"></a>
+      <span>2000 фраз</span>
+    </div>
     <nav aria-label="Основне меню">
-      <a href="./" aria-current="page">2000 фраз</a>
-      <a href="../support.html">Підтримка</a>
-      <a href="../en/" lang="en" hreflang="en">EN</a>
+      <a class="hide-sm" href="../support.html">Підтримка</a>
+      <a href="../#products">Усі продукти</a>
     </nav>
   </div>
 </header>
@@ -133,14 +135,25 @@
 
 <footer class="foot">
   <div class="wrap">
-    <img src="../assets/orizo-logo-white.svg" alt="Orizo" width="529" height="148">
-    <nav aria-label="Посилання в підвалі">
-      <a href="../">Orizo Labs</a>
-      <a href="../support.html">Підтримка</a>
-      <a href="../privacy.html">Політика конфіденційності</a>
-      <a href="mailto:support@orizolabs.com">support@orizolabs.com</a>
-    </nav>
-    <p>© 2026 Orizo Labs</p>
+    <div class="cols">
+      <div class="brand">
+        <img src="../assets/orizo-logo-white.svg" alt="Orizo" width="529" height="148">
+        <p>«2000 фраз» — продукт освітньої компанії Orizo Labs.</p>
+      </div>
+      <nav aria-labelledby="f-products">
+        <h2 id="f-products">Продукти</h2>
+        <ul><li><a href="./" aria-current="page">2000 фраз</a></li><li><a href="../academy/">Академія готовності</a></li></ul>
+      </nav>
+      <nav aria-labelledby="f-company">
+        <h2 id="f-company">Компанія</h2>
+        <ul><li><a href="../#about">Про нас</a></li><li><a href="../#orgs">Організаціям</a></li><li><a href="../#partners">Партнерам та інвесторам</a></li></ul>
+      </nav>
+      <nav aria-labelledby="f-help">
+        <h2 id="f-help">Допомога</h2>
+        <ul><li><a href="../support.html">Підтримка</a></li><li><a href="../privacy.html">Політика конфіденційності</a></li><li><a href="mailto:support@orizolabs.com">support@orizolabs.com</a></li></ul>
+      </nav>
+    </div>
+    <div class="legal"><p>© 2026 Orizo Labs</p></div>
   </div>
 </footer>
 </body>

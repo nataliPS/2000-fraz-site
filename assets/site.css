@@ -159,3 +159,72 @@ p{margin:0}
   .facts li{flex-direction:column;gap:2px}
   .sun{left:68%}
 }
+
+/* ---------- компанія з кількома продуктами ---------- */
+/* кожен продукт має свій колір героя; рамка (шапка, підвал) — спільна, Orizo */
+.sky{background:var(--hero,var(--night))}
+.sky .lead{color:var(--hero-soft,var(--on-night-soft))}
+.p-2000{--hero:#1F4FD1;--hero-soft:#DCE4FA;--p-accent:#F2C200;--p-accent-ink:#14213D}
+.p-academy{--hero:#1F3A5F;--hero-soft:#C9D3E2;--p-accent:#F2B544;--p-accent-ink:#15233B;--mist:#F3F0E8;--line:#E2DDD1}
+.p-2000 .btn-sun,.p-academy .btn-sun{background:var(--p-accent);color:var(--p-accent-ink)}
+.top .crumb{display:flex;align-items:center;gap:14px;min-width:0}
+.top .crumb span{color:var(--on-night);font-family:var(--head);font-weight:600;font-size:18px;padding-left:14px;border-left:1px solid rgba(246,247,251,.35);white-space:nowrap}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:500}
+.status::before{content:"";width:9px;height:9px;border-radius:50%;background:currentColor}
+.status.soon{color:#8A6D00}
+.status.dev{color:#3F6B3A}
+.sky .status{color:var(--on-night)}
+
+/* картки продуктів на головній */
+.products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin-top:56px}
+.pcard{background:var(--paper);border:1px solid var(--line);border-radius:24px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:var(--night)}
+.pcard:hover{border-color:var(--night);color:var(--night)}
+.pcard .band{height:200px;display:flex;align-items:center;justify-content:center}
+.pcard .band img{max-height:150px;width:auto}
+.pcard.c2000 .band{background:#1F4FD1}
+.pcard.c2000 .band img{border-radius:28px;max-height:128px}
+.pcard.cacademy .band{background:#F3F0E8}
+.pcard .body{padding:28px 32px 32px;display:flex;flex-direction:column;gap:10px;flex:1}
+.pcard h3{font-size:30px;font-weight:700}
+.pcard .what{font-family:var(--head);font-weight:600;color:var(--blue);font-size:17px}
+.pcard p{color:var(--ink-soft)}
+.pcard .meta{margin-top:auto;padding-top:14px;display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;justify-content:space-between}
+.pcard .more{font-family:var(--head);font-weight:600;color:var(--night);text-decoration:underline;text-underline-offset:4px}
+.pcard.next{border-style:dashed;background:transparent}
+.pcard.next .body{justify-content:center}
+
+/* для організацій */
+.orgs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-top:48px}
+.orgs h3{font-size:24px;font-weight:600}
+.orgs p{margin-top:8px;color:var(--ink-soft)}
+
+/* підвал з колонками */
+.foot .cols{display:grid;grid-template-columns:1.4fr repeat(3,minmax(0,1fr));gap:32px;width:100%}
+.foot h2{font-family:var(--head);font-size:15px;font-weight:600;color:var(--on-night-soft);margin:0 0 6px}
+.foot ul{list-style:none;margin:0;padding:0}
+.foot .brand p{margin-top:14px;max-width:22em}
+.foot .legal{width:100%;border-top:1px solid rgba(246,247,251,.12);padding-top:20px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+/* сторінка продукту: блок «для кого» */
+.who{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 48px;margin-top:40px}
+.who div{border-top:2px solid var(--night);padding-top:14px}
+.who h3{font-size:22px;font-weight:600}
+.who p{margin-top:6px;color:var(--ink-soft)}
+.areas{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 24px;margin-top:48px}
+.areas img{width:100%;max-width:200px;height:auto;margin-bottom:12px}
+.areas h3{font-size:19px;font-weight:600}
+.areas p{margin-top:4px;color:var(--ink-soft);font-size:16px;line-height:1.5}
+
+@media (max-width:900px){
+  .products,.orgs,.who{grid-template-columns:minmax(0,1fr)}
+  .areas{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .foot .cols{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .foot .brand{grid-column:1/-1}
+}
+@media (max-width:600px){
+  .top .crumb span{font-size:15px;padding-left:10px}
+  .pcard .body{padding:24px}
+}
+.foot .cols nav{display:block}
+.foot .cols li a{min-height:36px}
+.foot .legal{align-items:center}.foot .legal a{min-height:0}
