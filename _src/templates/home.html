@@ -49,6 +49,8 @@
     </div>
   </section>
 
+  <div class="ticker" aria-hidden="true"><div class="ticker-track">{{TICKER}}{{TICKER}}</div></div>
+
   <section class="section" id="products" aria-labelledby="products-h">
     <div class="wrap">
       <h2 id="products-h">{{products_h}}</h2>
@@ -72,15 +74,15 @@
             <div class="meta"><span class="status dev">{{status_dev}}</span><span class="more">{{more}}</span></div>
           </div>
         </a>
-        <div class="pcard cservice">
-          <div class="band"><img src="{{R}}assets/app-service-icon.png" width="240" height="240" alt=""></div>
+        <a class="pcard cpsd" href="psdinfo/">
+          <div class="band"><img src="{{R}}assets/psdinfo/icon.png" width="240" height="240" alt=""></div>
           <div class="body">
             <span class="what">{{psvc_what}}</span>
             <h3>{{psvc_name}}</h3>
             <p>{{psvc_desc}}</p>
-            <div class="meta"><span class="status concept">{{status_concept}}</span></div>
+            <div class="meta"><span class="status dev">{{status_dev}}</span><span class="more">{{more}}</span></div>
           </div>
-        </div>
+        </a>
         <div class="pcard chealth">
           <div class="band"><svg viewBox="0 0 64 64" width="120" height="120" aria-hidden="true"><path d="M32 54S8 40 8 23a12 12 0 0 1 24-4 12 12 0 0 1 24 4c0 17-24 31-24 31z" fill="#E4573D"/><path d="M14 31h10l4-8 6 16 4-8h12" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           <div class="body">
@@ -88,6 +90,60 @@
             <h3>{{ph_name}}</h3>
             <p>{{ph_desc}}</p>
             <div class="meta"><span class="status concept">{{status_plan}}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section explorer" id="why" aria-labelledby="why2-h">
+    <div class="wrap">
+      <span class="kicker">{{why_kicker}}</span>
+      <h2 id="why2-h">{{why2_h}}</h2>
+      <p class="intro">{{why2_intro}}</p>
+      <div class="xtabs" role="tablist" aria-label="{{why_kicker}}">
+        <button type="button" role="tab" id="xt1" aria-controls="xp1" aria-selected="true"><img src="{{R}}assets/app-2000-icon.png" width="40" height="40" alt="">{{x1_tab}}</button>
+        <button type="button" role="tab" id="xt2" aria-controls="xp2" aria-selected="false"><img src="{{R}}assets/academy/faculty-ready.svg" width="40" height="40" alt="">{{x2_tab}}</button>
+        <button type="button" role="tab" id="xt3" aria-controls="xp3" aria-selected="false"><img src="{{R}}assets/psdinfo/icon.png" width="40" height="40" alt="">{{x3_tab}}</button>
+      </div>
+      <div class="xpanels">
+        <div class="xpanel x2000" id="xp1" role="tabpanel" aria-labelledby="xt1">
+          <div class="xphone"><img src="{{R}}assets/shot-1-home.jpg" width="640" height="1385" alt="" loading="lazy"></div>
+          <div class="xtext">
+            <h3>{{x1_tab}}</h3>
+            <p class="xlabel">{{x_problem_h}}</p>
+            <p class="xproblem">{{x1_problem}}</p>
+            <p class="xlabel">{{x_gain_h}}</p>
+            <ul class="xgains"><li><svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{x1_g1}}</li><li><svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{x1_g2}}</li><li><svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{x1_g3}}</li></ul>
+            <p class="xlabel">{{x_who_h}}</p>
+            <p class="xwho">{{x1_who}}</p>
+            <a class="btn btn-night" href="2000/">{{x_more}}</a>
+          </div>
+        </div>
+        <div class="xpanel xacad" id="xp2" role="tabpanel" aria-labelledby="xt2">
+          <div class="xphone"><img src="{{R}}assets/academy/ra-scenario.jpg" width="640" height="1385" alt="" loading="lazy"></div>
+          <div class="xtext">
+            <h3>{{x2_tab}}</h3>
+            <p class="xlabel">{{x_problem_h}}</p>
+            <p class="xproblem">{{x2_problem}}</p>
+            <p class="xlabel">{{x_gain_h}}</p>
+            <ul class="xgains"><li><svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{x2_g1}}</li><li><svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{x2_g2}}</li><li><svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{x2_g3}}</li></ul>
+            <p class="xlabel">{{x_who_h}}</p>
+            <p class="xwho">{{x2_who}}</p>
+            <a class="btn btn-night" href="academy/">{{x_more}}</a>
+          </div>
+        </div>
+        <div class="xpanel xpsd" id="xp3" role="tabpanel" aria-labelledby="xt3">
+          <div class="xphone"><img src="{{R}}assets/psdinfo/psd-home.jpg" width="640" height="1385" alt="" loading="lazy"></div>
+          <div class="xtext">
+            <h3>{{x3_tab}}</h3>
+            <p class="xlabel">{{x_problem_h}}</p>
+            <p class="xproblem">{{x3_problem}}</p>
+            <p class="xlabel">{{x_gain_h}}</p>
+            <ul class="xgains"><li><svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{x3_g1}}</li><li><svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{x3_g2}}</li><li><svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{x3_g3}}</li></ul>
+            <p class="xlabel">{{x_who_h}}</p>
+            <p class="xwho">{{x3_who}}</p>
+            <a class="btn btn-night" href="psdinfo/">{{x_more}}</a>
           </div>
         </div>
       </div>
@@ -151,7 +207,7 @@
       <ol class="path">
         <li class="now"><span class="when">{{now}}</span><h3>{{path1_h}}</h3><p>{{path1_p}}</p></li>
         <li class="now"><span class="when">{{now}}</span><h3>{{path2_h}}</h3><p>{{path2_p}}</p></li>
-        <li><span class="when">2027</span><h3>{{path3_h}}</h3><p>{{path3_p}}</p></li>
+        <li class="now"><span class="when">{{now}}</span><h3>{{path3_h}}</h3><p>{{path3_p}}</p></li>
         <li><span class="when">2027</span><h3>{{path4_h}}</h3><p>{{path4_p}}</p></li>
         <li><span class="when">2028</span><h3>{{path5_h}}</h3><p>{{path5_p}}</p></li>
         <li><span class="when">2028</span><h3>{{path6_h}}</h3><p>{{path6_p}}</p></li>

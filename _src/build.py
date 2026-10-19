@@ -24,6 +24,7 @@ PAGES = {
     "p2000":   ("p2000.html",   "2000/",        "t2_title",   "t2_desc",   "t2_title",  "t2_og",    "t2_foot"),
     "academy": ("academy.html", "academy/",     "ta_title",   "ta_desc",   "ta_title",  "ta_og",    "ta_foot"),
     "support": ("support.html", "support.html", "ts_title",   "ts_desc",   "ts_title",  "ts_desc",  "foot_tagline"),
+    "psdinfo": ("psdinfo.html", "psdinfo/", "tp_title", "tp_desc", "tp_title", "tp_desc", "tp_foot"),
     "investors": ("investors.html", "investors/", "inv_title", "inv_desc", "inv_title", "inv_desc", "foot_tagline"),
 }
 
@@ -74,6 +75,8 @@ def main():
         if missing or extra:
             sys.exit(f"{lang}: бракує {sorted(missing)}; зайві {sorted(extra)}")
 
+    slogans = {l: load(l)["slogan"] for l in LANGS}
+    ticker = "".join(f'<span lang="{l}">{slogans[l]}</span>' for l in LANGS)
     written = []
     for lang in LANGS:
         t = load(lang)
@@ -92,7 +95,7 @@ def main():
                 f'<a href="{R}{lang_base(l)}{rel}" lang="{l}" hreflang="{l}">{NATIVE[l]}</a>'
                 for l in LANGS if l != lang)
             ctx = dict(t, lang=lang, R=R, L=L, URL=url, ALTERNATES="\n".join(alts),
-                       LANGMENU=menu, ASSET_V=ver, OGIMG=("og.png" if lang == "uk" else f"og-{lang}.png"), FOOTLANGS=footlangs, LANGCODE=("UA" if lang == "uk" else lang.upper()),
+                       LANGMENU=menu, TICKER=ticker, ASSET_V=ver, OGIMG=("og.png" if lang == "uk" else f"og-{lang}.png"), FOOTLANGS=footlangs, LANGCODE=("UA" if lang == "uk" else lang.upper()),
                        lang_native=NATIVE[lang], og_locale=OG[lang],
                        TITLE=t[kt], DESC=t[kd], OGTITLE=t[kot], OGDESC=t[kod], FOOTNOTE=t[kfoot])
             html = render((SRC / "templates" / tplname).read_text(encoding="utf-8"), ctx)
