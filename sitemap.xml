@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://orizolabs.com/</loc></url>
-  <url><loc>https://orizolabs.com/en/</loc></url>
   <url><loc>https://orizolabs.com/2000/</loc></url>
   <url><loc>https://orizolabs.com/academy/</loc></url>
   <url><loc>https://orizolabs.com/support.html</loc></url>
+  <url><loc>https://orizolabs.com/en/</loc></url>
+  <url><loc>https://orizolabs.com/en/2000/</loc></url>
+  <url><loc>https://orizolabs.com/en/academy/</loc></url>
+  <url><loc>https://orizolabs.com/en/support.html</loc></url>
+  <url><loc>https://orizolabs.com/pl/</loc></url>
+  <url><loc>https://orizolabs.com/pl/2000/</loc></url>
+  <url><loc>https://orizolabs.com/pl/academy/</loc></url>
+  <url><loc>https://orizolabs.com/pl/support.html</loc></url>
+  <url><loc>https://orizolabs.com/lt/</loc></url>
+  <url><loc>https://orizolabs.com/lt/2000/</loc></url>
+  <url><loc>https://orizolabs.com/lt/academy/</loc></url>
+  <url><loc>https://orizolabs.com/lt/support.html</loc></url>
+  <url><loc>https://orizolabs.com/lv/</loc></url>
+  <url><loc>https://orizolabs.com/lv/2000/</loc></url>
+  <url><loc>https://orizolabs.com/lv/academy/</loc></url>
+  <url><loc>https://orizolabs.com/lv/support.html</loc></url>
+  <url><loc>https://orizolabs.com/et/</loc></url>
+  <url><loc>https://orizolabs.com/et/2000/</loc></url>
+  <url><loc>https://orizolabs.com/et/academy/</loc></url>
+  <url><loc>https://orizolabs.com/et/support.html</loc></url>
+  <url><loc>https://orizolabs.com/sk/</loc></url>
+  <url><loc>https://orizolabs.com/sk/2000/</loc></url>
+  <url><loc>https://orizolabs.com/sk/academy/</loc></url>
+  <url><loc>https://orizolabs.com/sk/support.html</loc></url>
   <url><loc>https://orizolabs.com/privacy.html</loc></url>
 </urlset>

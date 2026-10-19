@@ -8,15 +8,27 @@
 <link rel="icon" href="../assets/favicon-32.png" sizes="32x32">
 <link rel="icon" href="../assets/orizo-icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
-<meta property="og:title" content="Академія готовності — Orizo Labs">
+<link rel="canonical" href="https://orizolabs.com/academy/">
+<link rel="alternate" hreflang="uk" href="https://orizolabs.com/academy/">
+<link rel="alternate" hreflang="en" href="https://orizolabs.com/en/academy/">
+<link rel="alternate" hreflang="pl" href="https://orizolabs.com/pl/academy/">
+<link rel="alternate" hreflang="lt" href="https://orizolabs.com/lt/academy/">
+<link rel="alternate" hreflang="lv" href="https://orizolabs.com/lv/academy/">
+<link rel="alternate" hreflang="et" href="https://orizolabs.com/et/academy/">
+<link rel="alternate" hreflang="sk" href="https://orizolabs.com/sk/academy/">
+<link rel="alternate" hreflang="x-default" href="https://orizolabs.com/en/academy/">
+<meta property="og:title" content="Академія готовності — цивільна підготовка · Orizo Labs">
 <meta property="og:description" content="Цивільна підготовка на досвіді України. Курси, сценарії, особистий план і кризовий режим без інтернету.">
 <meta property="og:image" content="https://orizolabs.com/assets/og.png">
+<meta property="og:url" content="https://orizolabs.com/academy/">
+<meta property="og:locale" content="uk_UA">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Rubik:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
+
 <body class="p-academy">
 <a class="skip" href="#main">Перейти до змісту</a>
 <header class="top">
@@ -26,7 +38,12 @@
       <span>Академія готовності</span>
     </div>
     <nav aria-label="Основне меню">
-      <a href="../#products">Усі продукти</a>
+      <a class="hide-sm" href="../#products">Усі продукти</a>
+      <details class="langsw">
+  <summary aria-label="Мова сайту: Українська"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>UA</summary>
+  <ul><li><a href="../academy/" lang="uk" hreflang="uk" aria-current="true">Українська</a></li><li><a href="../en/academy/" lang="en" hreflang="en">English</a></li><li><a href="../pl/academy/" lang="pl" hreflang="pl">Polski</a></li><li><a href="../lt/academy/" lang="lt" hreflang="lt">Lietuvių</a></li><li><a href="../lv/academy/" lang="lv" hreflang="lv">Latviešu</a></li><li><a href="../et/academy/" lang="et" hreflang="et">Eesti</a></li><li><a href="../sk/academy/" lang="sk" hreflang="sk">Slovenčina</a></li></ul>
+</details>
+
     </nav>
   </div>
 </header>
@@ -38,7 +55,7 @@
       <h1 style="margin-top:20px">Академія готовності</h1>
       <p class="lead">Цивільна підготовка на досвіді України. Знати, що робити під час тривоги, блекауту, травми чи стихійного лиха, і мати готовий план для себе й родини.</p>
       <div class="langs" aria-label="Мови">
-        <span>Українською</span><span lang="en">In English</span><span>Працює без інтернету</span>
+        <span lang="uk">Українською</span><span lang="en">In English</span><span lang="lt">Lietuviškai</span><span>Працює без інтернету</span>
       </div>
       <div class="actions">
         <a class="btn btn-sun" href="mailto:hello@orizolabs.com?subject=%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%8F%20%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D1%96%20%E2%80%94%20%D1%82%D0%B5%D1%81%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F">Хочу тестувати першим</a>
@@ -77,20 +94,31 @@
     </div>
   </section>
 
-  <section class="section" aria-labelledby="who-h">
+  <section class="section" aria-labelledby="experts-h">
+    <div class="wrap">
+      <h2 id="experts-h">Хто стоїть за змістом</h2>
+      <p class="intro">Ми не вигадуємо правил безпеки: збираємо те, що вже спрацювало в Україні, і даємо перевірити тим, хто знає це з практики.</p>
+      <div class="exp">
+        <div><h4>Ветерани</h4><p>Ветерани в нашій команді експертів перевіряють уроки про загрози, укриття й поведінку в кризі, щоб поради працювали в реальному житті, а не лише на папері.</p></div>
+        <div><h4>Інструктори-практики</h4><p>Домедичну допомогу, орієнтування й польові навички переглядають інструктори, які навчають людей наживо.</p></div>
+        <div><h4>Офіційні рекомендації</h4><p>Спираємося на відкриті рекомендації служб цивільного захисту й оновлюємо уроки, коли змінюються загрози.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section product" aria-labelledby="who-h">
     <div class="wrap">
       <h2 id="who-h">Для кого</h2>
       <div class="who">
         <div><h3>Для родин</h3><p>Спокійно підготувати дім, дітей і близьких, не панікуючи і не витрачаючи зайвого.</p></div>
         <div><h3>Для шкіл і вчителів</h3><p>Готові уроки й іспити для класів, з поясненнями простою мовою.</p></div>
         <div><h3>Для громад і волонтерів</h3><p>Спільна підготовка мешканців, навчання для груп і журнал інструктора.</p></div>
-        <div><h3>Для Європи</h3><p>Досвід України для мешканців Литви, Латвії, Польщі та інших країн, де готовність стала частиною життя.</p></div>
+        <div><h3>Для Європи</h3><p>Досвід України для мешканців Литви, Латвії, Естонії, Польщі, Словаччини та інших країн, де готовність стала частиною життя.</p></div>
       </div>
       <p class="intro" style="margin-top:48px">Лише цивільне й захисне: як розпізнати загрозу і захистити себе та інших. Без бойової тактики, зброї чи інструкцій, що можуть зашкодити.</p>
     </div>
   </section>
 </main>
-
 <footer class="foot">
   <div class="wrap">
     <div class="cols">
@@ -100,19 +128,20 @@
       </div>
       <nav aria-labelledby="f-products">
         <h2 id="f-products">Продукти</h2>
-        <ul><li><a href="../2000/">2000 фраз</a></li><li><a href="./" aria-current="page">Академія готовності</a></li></ul>
+        <ul><li><a href="../2000/">2000 фраз</a></li><li><a href="../academy/">Академія готовності</a></li></ul>
       </nav>
       <nav aria-labelledby="f-company">
         <h2 id="f-company">Компанія</h2>
         <ul><li><a href="../#about">Про нас</a></li><li><a href="../#orgs">Організаціям</a></li><li><a href="../#partners">Партнерам та інвесторам</a></li></ul>
       </nav>
       <nav aria-labelledby="f-help">
-        <h2 id="f-help">Зв'язок</h2>
-        <ul><li><a href="mailto:hello@orizolabs.com">hello@orizolabs.com</a></li></ul>
+        <h2 id="f-help">Допомога</h2>
+        <ul><li><a href="../support.html">Підтримка</a></li><li><a href="../privacy.html">Політика конфіденційності</a></li><li><a href="mailto:hello@orizolabs.com">hello@orizolabs.com</a></li></ul>
       </nav>
     </div>
-    <div class="legal"><p>© 2026 Orizo Labs</p></div>
+    <div class="legal"><p>© 2026 Orizo Labs</p><p class="foot-langs"><a href="../en/academy/" lang="en" hreflang="en">English</a> · <a href="../pl/academy/" lang="pl" hreflang="pl">Polski</a> · <a href="../lt/academy/" lang="lt" hreflang="lt">Lietuvių</a> · <a href="../lv/academy/" lang="lv" hreflang="lv">Latviešu</a> · <a href="../et/academy/" lang="et" hreflang="et">Eesti</a> · <a href="../sk/academy/" lang="sk" hreflang="sk">Slovenčina</a></p></div>
   </div>
 </footer>
 </body>
 </html>
+
