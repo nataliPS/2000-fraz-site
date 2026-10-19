@@ -445,3 +445,17 @@ p{margin:0}
 .trust li{display:flex;align-items:center;gap:8px;font-size:16px;font-weight:500;color:var(--on-night)}
 .trust svg{width:20px;height:20px;flex:0 0 auto}
 .pledge .intro{color:var(--on-night-soft)}
+
+/* ---------- баланс: темні лише герой і фінал, середина світла й тепла ---------- */
+.pledge{background:var(--paper);color:var(--night);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.section.pledge h2{color:var(--night)}
+.section.pledge .intro{color:var(--ink-soft)}
+.pledge .kicker{color:#8A6D00}
+.pledges > div{background:var(--mist);border:1px solid var(--line)}
+.pledges svg{color:var(--night);background:var(--dawn);border-radius:12px;padding:8px;box-sizing:content-box}
+.pledges h3{color:var(--night)}
+.pledges p{color:var(--ink-soft)}
+.story{background:#FFF6DB;color:var(--night)}
+.story h2{color:var(--night)}
+.story .kicker{color:#8A6D00}
+.story-text p{color:#3D4659}
