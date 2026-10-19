@@ -62,8 +62,8 @@
  "exp_h": "Patirtis, kuria remiamės",
  "exp1_h": "Ukrainiečių atsparumas",
  "exp1_p": "Oro pavojaus signalai, elektros dingimai, evakuacija, gyvenimas persikėlus — mokome to, ką milijonai ukrainiečių jau patyrė praktiškai.",
- "exp2_h": "Veteranas tarp įkūrėjų",
- "exp2_p": "Vienas iš Orizo Labs įkūrėjų – veteranas, turintis ilgametę tarptautinio lygio patirtį. Kartu su mūsų ekspertų komandos veteranais ir instruktoriais praktikais jis asmeniškai peržiūri ir analizuoja kiekvieną pasirengimo kursą.",
+ "exp2_h": "Veteranai komandoje",
+ "exp2_p": "Tarp Orizo Labs įkūrėjų ir ekspertų yra veteranų, turinčių ilgametę, taip pat tarptautinio lygio, patirtį. Pasirengimo kursus tikriname komanda: veteranai ir instruktoriai praktikai kartu analizuoja turinį, kad patarimai veiktų tikrame gyvenime.",
  "exp3_h": "Verslo patirtis",
  "exp3_p": "Įkūrėjas sukūrė ir plėtoja savo verslą Ukrainoje, taip pat ir karo sąlygomis. Todėl taupiai skaičiuojame išteklius, greitai tikriname idėjas ir pristatome produktus žmonėms.",
  "orgs_h": "Organizacijoms",
@@ -174,7 +174,7 @@
  "experts_h": "Kas stovi už turinio",
  "experts_intro": "Saugumo taisyklių neišgalvojame: renkame tai, kas jau pasiteisino Ukrainoje, ir duodame patikrinti tiems, kas tai žino iš praktikos.",
  "ex1_h": "Veteranai",
- "ex1_p": "Vienas iš Orizo Labs įkūrėjų – veteranas, turintis ilgametę tarptautinio lygio patirtį. Kartu su kitais mūsų ekspertų komandos veteranais jis asmeniškai analizuoja pamokas apie grėsmes, slėptuves ir elgesį krizės metu, kad patarimai veiktų tikrame gyvenime, o ne tik popieriuje.",
+ "ex1_p": "Tarp Orizo Labs įkūrėjų ir ekspertų yra veteranų, turinčių ilgametę, taip pat tarptautinio lygio, patirtį. Jie kartu analizuoja pamokas apie grėsmes, slėptuves ir elgesį krizės metu, kad patarimai veiktų tikrame gyvenime, o ne tik popieriuje.",
  "ex2_h": "Praktikai instruktoriai",
  "ex2_p": "Pirmosios pagalbos, orientavimosi ir lauko įgūdžių pamokas peržiūri instruktoriai, kurie moko žmones gyvai.",
  "ex3_h": "Oficialios rekomendacijos",
@@ -208,5 +208,6 @@
  "val2_h": "Profesionalumas",
  "val2_p": "Būti profesionalu – tai atsakyti už kiekvieną pamokos žodį. Turinį tikrina tie, kurie tai darė praktiškai, o ne tik apie tai skaitė.",
  "val3_h": "Atsakomybė",
- "val3_p": "Žinios, kurios gelbsti gyvybes, yra nemokamos. Gerbiame žmonių laiką, pinigus ir privatumą ir kalbame su jais sąžiningai."
+ "val3_p": "Žinios, kurios gelbsti gyvybes, yra nemokamos. Gerbiame žmonių laiką, pinigus ir privatumą ir kalbame su jais sąžiningai.",
+ "slogan": "Patirtis – didžiausia vertybė."
 }

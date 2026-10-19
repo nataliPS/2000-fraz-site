@@ -62,8 +62,8 @@
  "exp_h": "Pieredze, uz kuras mēs būvējam",
  "exp1_h": "Ukrainas noturība",
  "exp1_p": "Trauksmes, elektrības atslēgumi, evakuācija, dzīve pēc pārcelšanās — mēs mācām to, ko miljoniem ukraiņu jau ir piedzīvojuši praksē.",
- "exp2_h": "Veterāns dibinātāju vidū",
- "exp2_p": "Viens no Orizo Labs dibinātājiem ir veterāns ar daudzu gadu starptautiska līmeņa pieredzi. Kopā ar veterāniem un instruktoriem praktiķiem no mūsu ekspertu komandas viņš personīgi pārskata un analizē katru gatavības kursu.",
+ "exp2_h": "Veterāni komandā",
+ "exp2_p": "Orizo Labs dibinātāju un ekspertu vidū ir veterāni ar daudzu gadu pieredzi, tostarp starptautiskā līmenī. Gatavības kursus mēs pārbaudām komandā: veterāni un instruktori praktiķi kopā analizē saturu, lai padomi darbotos reālajā dzīvē.",
  "exp3_h": "Uzņēmējdarbības pieredze",
  "exp3_p": "Dibinātājs ir izveidojis un attīsta savu uzņēmumu Ukrainā, arī kara apstākļos. Tāpēc mēs rūpīgi plānojam resursus, ātri pārbaudām idejas un nogādājam produktus līdz cilvēkiem.",
  "orgs_h": "Organizācijām",
@@ -174,7 +174,7 @@
  "experts_h": "Kas stāv aiz satura",
  "experts_intro": "Mēs neizdomājam drošības noteikumus: apkopojam to, kas jau ir sevi pierādījis Ukrainā, un dodam to pārbaudīt tiem, kas to zina no prakses.",
  "ex1_h": "Veterāni",
- "ex1_p": "Viens no Orizo Labs dibinātājiem ir veterāns ar daudzu gadu starptautiska līmeņa pieredzi. Kopā ar citiem veterāniem no mūsu ekspertu komandas viņš personīgi analizē nodarbības par draudiem, patvertnēm un rīcību krīzē, lai padomi darbotos reālajā dzīvē, nevis tikai uz papīra.",
+ "ex1_p": "Orizo Labs dibinātāju un ekspertu vidū ir veterāni ar daudzu gadu pieredzi, tostarp starptautiskā līmenī. Viņi kopā analizē nodarbības par draudiem, patvertnēm un rīcību krīzē, lai padomi darbotos reālajā dzīvē, nevis tikai uz papīra.",
  "ex2_h": "Praktiķi instruktori",
  "ex2_p": "Pirmās palīdzības, orientēšanās un lauka prasmju saturu pārskata instruktori, kuri māca cilvēkus klātienē.",
  "ex3_h": "Oficiālie ieteikumi",
@@ -208,5 +208,6 @@
  "val2_h": "Profesionalitāte",
  "val2_p": "Būt profesionālim nozīmē atbildēt par katru vārdu nodarbībā. Saturu pārbauda tie, kas to darījuši praksē, nevis tikai lasījuši par to.",
  "val3_h": "Atbildība",
- "val3_p": "Zināšanas, kas glābj dzīvības, ir bezmaksas. Mēs cienām cilvēku laiku, naudu un privātumu un runājam ar viņiem godīgi."
+ "val3_p": "Zināšanas, kas glābj dzīvības, ir bezmaksas. Mēs cienām cilvēku laiku, naudu un privātumu un runājam ar viņiem godīgi.",
+ "slogan": "Pieredze ir augstākā vērtība."
 }

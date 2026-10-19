@@ -62,8 +62,8 @@
  "exp_h": "Doświadczenie, na którym budujemy",
  "exp1_h": "Ukraińska odporność",
  "exp1_p": "Alarmy, blackouty, ewakuacja, życie po przeprowadzce — uczymy tego, co miliony Ukraińców przeszły już w praktyce.",
- "exp2_h": "Weteran wśród założycieli",
- "exp2_p": "Jeden z założycieli Orizo Labs to weteran z wieloletnim doświadczeniem na poziomie międzynarodowym. Razem z weteranami i instruktorami-praktykami z naszego zespołu ekspertów osobiście przegląda i analizuje każdy kurs gotowości.",
+ "exp2_h": "Weterani w zespole",
+ "exp2_p": "Wśród założycieli i ekspertów Orizo Labs są weterani z wieloletnim doświadczeniem, także na poziomie międzynarodowym. Kursy gotowości sprawdzamy zespołowo: weterani i instruktorzy-praktycy wspólnie analizują treści, aby rady sprawdzały się w prawdziwym życiu.",
  "exp3_h": "Doświadczenie przedsiębiorcze",
  "exp3_p": "Założyciel zbudował i rozwija własny biznes na Ukrainie, także w warunkach wojny. Dlatego starannie liczymy zasoby, szybko sprawdzamy pomysły i dowozimy produkty do ludzi.",
  "orgs_h": "Dla organizacji",
@@ -174,7 +174,7 @@
  "experts_h": "Kto stoi za treścią",
  "experts_intro": "Nie wymyślamy zasad bezpieczeństwa: zbieramy to, co już sprawdziło się w Ukrainie, i dajemy to do weryfikacji ludziom, którzy znają temat z praktyki.",
  "ex1_h": "Weterani",
- "ex1_p": "Jeden z założycieli Orizo Labs to weteran z wieloletnim doświadczeniem na poziomie międzynarodowym. Razem z innymi weteranami z naszego zespołu ekspertów osobiście analizuje lekcje o zagrożeniach, schronach i zachowaniu w kryzysie, aby rady działały w prawdziwym życiu, a nie tylko na papierze.",
+ "ex1_p": "Wśród założycieli i ekspertów Orizo Labs są weterani z wieloletnim doświadczeniem, także na poziomie międzynarodowym. Wspólnie analizują lekcje o zagrożeniach, schronach i zachowaniu w kryzysie, aby rady działały w prawdziwym życiu, a nie tylko na papierze.",
  "ex2_h": "Instruktorzy-praktycy",
  "ex2_p": "Pierwszą pomoc, orientację w terenie i umiejętności terenowe przeglądają instruktorzy, którzy szkolą ludzi na żywo.",
  "ex3_h": "Oficjalne zalecenia",
@@ -208,5 +208,6 @@
  "val2_h": "Profesjonalizm",
  "val2_p": "Być profesjonalistą to odpowiadać za każde słowo w lekcji. Treści sprawdzają ludzie, którzy robili to w praktyce, a nie tylko o tym czytali.",
  "val3_h": "Odpowiedzialność",
- "val3_p": "Wiedza, która ratuje życie, jest bezpłatna. Szanujemy czas, pieniądze i prywatność ludzi i rozmawiamy z nimi uczciwie."
+ "val3_p": "Wiedza, która ratuje życie, jest bezpłatna. Szanujemy czas, pieniądze i prywatność ludzi i rozmawiamy z nimi uczciwie.",
+ "slogan": "Doświadczenie to najwyższa wartość."
 }

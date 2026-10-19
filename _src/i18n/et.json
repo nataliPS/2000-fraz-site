@@ -62,8 +62,8 @@
  "exp_h": "Kogemus, millele toetume",
  "exp1_h": "Ukraina vastupidavus",
  "exp1_p": "Õhuhäired, elektrikatkestused, evakuatsioon, elu pärast kolimist — õpetame seda, mille miljonid ukrainlased on juba läbi elanud.",
- "exp2_h": "Veteran asutajate seas",
- "exp2_p": "Üks Orizo Labsi asutajatest on pikaajalise rahvusvahelise kogemusega veteran. Koos meie ekspertrühma veteranide ja praktiliste instruktoritega vaatab ta iga valmisolekukursuse isiklikult üle ja analüüsib seda.",
+ "exp2_h": "Veteranid meeskonnas",
+ "exp2_p": "Orizo Labsi asutajate ja ekspertide hulgas on pikaajalise, sealhulgas rahvusvahelise kogemusega veterane. Valmisolekukursusi kontrollime meeskonnana: veteranid ja praktilised instruktorid analüüsivad sisu koos, et nõuanded toimiksid päriselus.",
  "exp3_h": "Ettevõtluskogemus",
  "exp3_p": "Asutaja on üles ehitanud ja arendab oma ettevõtet Ukrainas, ka sõja ajal. Seepärast kasutame ressursse hoolikalt, kontrollime ideid kiiresti ja viime tooted inimesteni.",
  "orgs_h": "Organisatsioonidele",
@@ -174,7 +174,7 @@
  "experts_h": "Kes on sisu taga",
  "experts_intro": "Me ei mõtle ohutusreegleid välja: kogume seda, mis on Ukrainas juba toiminud, ja laseme selle üle kontrollida neil, kes tunnevad seda praktikast.",
  "ex1_h": "Veteranid",
- "ex1_p": "Üks Orizo Labsi asutajatest on pikaajalise rahvusvahelise kogemusega veteran. Koos teiste meie ekspertrühma veteranidega analüüsib ta isiklikult tunde ohtude, varjendite ja kriisis käitumise kohta, et nõuanded toimiksid päriselus, mitte ainult paberil.",
+ "ex1_p": "Orizo Labsi asutajate ja ekspertide hulgas on pikaajalise, sealhulgas rahvusvahelise kogemusega veterane. Nad analüüsivad koos tunde ohtude, varjendite ja kriisis käitumise kohta, et nõuanded toimiksid päriselus, mitte ainult paberil.",
  "ex2_h": "Praktikutest instruktorid",
  "ex2_p": "Esmaabi, orienteerumise ja välioskuste sisu vaatavad üle instruktorid, kes õpetavad inimesi silmast silma.",
  "ex3_h": "Ametlikud soovitused",
@@ -208,5 +208,6 @@
  "val2_h": "Professionaalsus",
  "val2_p": "Olla professionaal tähendab vastutada iga sõna eest tunnis. Sisu kontrollivad need, kes on seda praktikas teinud, mitte ainult sellest lugenud.",
  "val3_h": "Vastutus",
- "val3_p": "Elupäästvad teadmised on tasuta. Austame inimeste aega, raha ja privaatsust ning räägime nendega ausalt."
+ "val3_p": "Elupäästvad teadmised on tasuta. Austame inimeste aega, raha ja privaatsust ning räägime nendega ausalt.",
+ "slogan": "Kogemus on suurim väärtus."
 }
