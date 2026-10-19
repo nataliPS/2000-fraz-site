@@ -1,23 +1,17 @@
 /* Orizo Labs — спільні стилі сайту */
 :root{
-  /* Orizo 2026: «Сучасна турбота» — спокій, безпека, здоров'я */
-  --night:#0F4C47;      /* глибокий зелений: головний колір, темні смуги */
-  --night-2:#0B3B37;
-  --dawn:#E9B64F;       /* бурштинове сонце */
-  --blue:#1A6A62;       /* посилання, підписи */
-  --mist:#FBFAF7;       /* кремовий фон */
+  --night:#14213D;      /* небо до світанку, основний текст */
+  --night-2:#1C2C50;
+  --dawn:#F2C200;       /* сонце */
+  --blue:#1F4FD1;
+  --mist:#F6F7FB;       /* світлий фон */
   --paper:#FFFFFF;
-  --sand:#F5F0E8;
-  --sage:#E3EEEA;
-  --amber-soft:#F1E3C4;
-  --ink:#17302D;        /* основний текст */
-  --ink-soft:#4C5D59;
-  --line:#E3DED3;
-  --on-night:#F5F0E8;
-  --on-night-soft:#C8D8D4;
-  --head:"Manrope",system-ui,sans-serif;
-  --body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --serif:"Source Serif 4",Georgia,serif;
+  --ink-soft:#4A5568;
+  --line:#DCE2F0;
+  --on-night:#F6F7FB;
+  --on-night-soft:#BFC9E3;
+  --head:"Rubik",system-ui,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --wrap:1120px;
 }
 *{box-sizing:border-box}
@@ -445,72 +439,9 @@ p{margin:0}
   .path{grid-template-columns:minmax(0,1fr)}
 }
 
-
-/* =========== Тема «Сучасна турбота» (2026-10) =========== */
-body{color:var(--ink);font-weight:500}
-h1,h2,h3,h4{color:inherit}
-.section h2{font-weight:800;letter-spacing:-.03em;color:var(--night)}
-.section .intro{color:var(--ink-soft)}
-.btn{border-radius:14px;font-weight:700}
-.btn-sun{background:var(--dawn);color:var(--ink)}
-.btn-sun:hover{background:#F2C76A;color:var(--ink)}
-
-/* світла шапка й герой: головна, інвесторам, підтримка */
-.lighttop .top nav a,.lighttop .langsw summary{color:var(--ink)}
-.lighttop .top nav a:hover,.lighttop .langsw summary:hover,.lighttop .langsw[open] summary{background:var(--sage);color:var(--night)}
-.lighttop .top .crumb span{color:var(--night);border-left-color:var(--line)}
-.lighttop .sky{background:var(--mist);color:var(--ink)}
-.lighttop .sky h1{color:var(--night);font-weight:800;letter-spacing:-.035em}
-.lighttop .sky .lead{color:var(--ink-soft)}
-.lighttop .sky .btn-sun{background:var(--night);color:#fff}
-.lighttop .sky .btn-sun:hover{background:var(--night-2);color:#fff}
-.lighttop .sky .btn-ghost{background:var(--amber-soft);border-color:var(--amber-soft);color:#5C3D0B}
-.lighttop .sky .btn-ghost:hover{background:#EAD6A8;color:#3A2A0E}
-.lighttop .sky-plain{border-bottom:1px solid var(--line)}
-.mission{color:#8A5A12;border-left-color:var(--dawn)}
-
-/* сонце за телефонами */
-.phones::before{content:"";position:absolute;left:50%;top:50%;width:440px;height:440px;margin:-180px 0 0 -220px;border-radius:50%;background:var(--dawn);opacity:.9}
-.phone{background:#0B2E2B;box-shadow:0 30px 60px rgba(15,76,71,.28)}
-.phone.p1,.phone.p2{z-index:1}
+/* досвід — у центрі; рядок довіри на темному герої */
+.mission{font-size:clamp(17px,1.8vw,22px);font-weight:700;letter-spacing:.01em}
 .trust{list-style:none;margin:28px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px}
-.trust li{display:flex;align-items:center;gap:8px;font-size:16px;font-weight:600;color:var(--night)}
+.trust li{display:flex;align-items:center;gap:8px;font-size:16px;font-weight:500;color:var(--on-night)}
 .trust svg{width:20px;height:20px;flex:0 0 auto}
-
-/* смуги й картки */
-.numbers{background:var(--paper)}
-.numbers dt{color:var(--night);font-weight:800;letter-spacing:-.03em}
-.pcard{border:none;border-radius:28px;box-shadow:0 1px 0 var(--line),0 0 0 1px var(--line)}
-.pcard:hover{box-shadow:0 0 0 2px var(--night)}
-.pcard h3{color:var(--night);font-weight:800;letter-spacing:-.02em}
-.pcard .more{color:var(--night)}
-.story{background:var(--sand);color:var(--ink)}
-.story h2{color:var(--night)}
-.story .kicker{color:#8A5A12}
-.story-text p,.story .exp p{color:var(--ink-soft)}
-.story .exp-h{color:var(--night)}
-.exp h4{color:var(--night);font-weight:700}
-.values blockquote p,.why-value{font-family:var(--serif);font-weight:500;letter-spacing:0;color:var(--night)}
-.values .kicker,.team .kicker{color:#8A5A12}
-.role{border:none;border-radius:28px;background:var(--paper);box-shadow:0 0 0 1px var(--line)}
-.role:nth-child(1) svg{background:var(--sage)}
-.role:nth-child(2) svg{background:var(--amber-soft)}
-.role:nth-child(3) svg{background:var(--dawn)}
-.role:nth-child(4) svg{background:var(--sage)}
-.role h3{color:var(--night);font-weight:700}
-.pledges > div{border-radius:28px}
-.partners{background:var(--night)}
-.foot{background:#0B2E2B}
-.foot .brand p.slogan{color:var(--dawn)}
-.who div{border-top-color:var(--night)}
-.plan{border-radius:24px}
-.plan.plus{border-color:var(--night)}
-.doc p,.doc li{color:var(--ink)}
-.bignums b{color:var(--night);font-weight:800;letter-spacing:-.03em}
-.path .when{color:var(--blue)}
-.path h3{color:var(--night);font-weight:700}
-.shots4 img,.cols3 img{border-radius:24px}
-.status.soon{color:#8A5A12}
-.section.pledge h2,.section.partners h2{color:var(--on-night)}
-.section.pledge .intro,.section.partners .intro{color:var(--on-night-soft)}
-.lighttop .sky{padding-top:136px}
+.pledge .intro{color:var(--on-night-soft)}
