@@ -293,3 +293,64 @@ p{margin:0}
 .values{background:var(--paper);border-bottom:1px solid var(--line)}
 .foot .brand p.slogan{font-family:var(--head);font-weight:600;color:var(--dawn);font-size:18px}
 .foot .brand p.slogan+p{margin-top:6px}
+
+/* ---------- герой з телефонами, інвесторам (2026-10) ---------- */
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:40px;align-items:center;position:relative;z-index:2}
+.hero-grid h1{font-size:clamp(46px,6.2vw,88px)}
+.phones{position:relative;height:540px}
+.phone{position:absolute;width:236px;border-radius:38px;background:#0B1326;padding:9px;box-shadow:0 30px 70px rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.12) inset}
+.phone img{border-radius:30px;width:100%;height:auto}
+.phone.p1{left:6%;top:0;transform:rotate(-4deg)}
+.phone.p2{right:2%;top:70px;transform:rotate(5deg)}
+.sky .hero-grid + .horizon{margin-top:-90px}
+
+.products{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.pcard h3{font-size:26px}
+.pcard.cservice .band{background:#2F3B2A}
+.pcard.cservice .band img{border-radius:28px;max-height:128px}
+.status.concept{color:#5B6352}
+
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.contact-card .cta-row .btn{margin-top:0}
+.contact-card a.btn-ghost{color:var(--on-night)}
+
+/* екрани застосунку */
+.shots4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin-top:48px}
+.shots4 figure{margin:0}
+.shots4 img{border-radius:22px;box-shadow:0 20px 50px rgba(20,33,61,.16)}
+.shots4 figcaption{margin-top:16px;color:var(--ink-soft);font-size:16px;line-height:1.45}
+
+/* інвесторам */
+.p-invest{--hero:#14213D}
+.bignums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-top:48px}
+.bignums b{display:block;font-family:var(--head);font-weight:700;font-size:clamp(44px,5vw,64px);line-height:1;color:var(--night)}
+.bignums b::after{content:"";display:block;width:56px;height:5px;background:var(--dawn);margin:18px 0 0}
+.bignums p{margin-top:18px;color:var(--ink-soft)}
+.sources{margin-top:40px;font-size:14px;color:var(--ink-soft)}
+.built{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-top:48px}
+.built img{width:72px;height:72px;border-radius:18px;margin-bottom:18px}
+.built img.wide{width:115px;height:72px;border-radius:0}
+.built h3{font-size:24px;font-weight:600}
+.built p{margin-top:8px;color:var(--ink-soft)}
+.built a{display:inline-block;margin-top:12px;font-weight:500}
+.ask{margin:28px 0 0;padding:0;list-style:none}
+.ask li{color:var(--on-night-soft);font-size:19px;padding:12px 0 12px 32px;position:relative;border-top:1px solid rgba(246,247,251,.14)}
+.ask li::before{content:"";position:absolute;left:0;top:22px;width:14px;height:14px;border-radius:50%;background:var(--dawn)}
+
+@media (max-width:1000px){
+  .products{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+}
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:minmax(0,1fr)}
+  .phones{height:400px;max-width:420px}
+  .phone{width:180px;border-radius:30px;padding:7px}
+  .phone img{border-radius:24px}
+  .sky .hero-grid + .horizon{margin-top:-40px}
+  .products,.built,.bignums{grid-template-columns:minmax(0,1fr)}
+  .shots4{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:600px){
+  .phones{height:330px}
+  .phone{width:150px}
+  .phone.p2{top:50px}
+}

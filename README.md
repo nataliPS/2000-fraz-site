@@ -9,6 +9,7 @@
 | Продукт «2000 фраз» | `2000/index.html` |
 | Продукт «Академія готовності» | `academy/index.html` |
 | Підтримка (Support URL для App Store) | `support.html` |
+| Для інвесторів | `investors/` |
 | Політика конфіденційності «2000 фраз» (Privacy URL) | `privacy.html` |
 
 ## Мови і як редагувати тексти

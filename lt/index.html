@@ -38,6 +38,7 @@
       <a href="#products">Produktai</a>
       <a class="hide-sm" href="#orgs">Organizacijoms</a>
       <a class="hide-sm" href="#about">Apie mus</a>
+      <a class="hide-sm" href="investors/">Investuotojams</a>
       <details class="langsw">
   <summary aria-label="Svetainės kalba: Lietuvių"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>LT</summary>
   <ul><li><a href="../" lang="uk" hreflang="uk">Українська</a></li><li><a href="../en/" lang="en" hreflang="en">English</a></li><li><a href="../pl/" lang="pl" hreflang="pl">Polski</a></li><li><a href="../lt/" lang="lt" hreflang="lt" aria-current="true">Lietuvių</a></li><li><a href="../lv/" lang="lv" hreflang="lv">Latviešu</a></li><li><a href="../et/" lang="et" hreflang="et">Eesti</a></li><li><a href="../sk/" lang="sk" hreflang="sk">Slovenčina</a></li></ul>
@@ -49,12 +50,18 @@
 
 <main id="main">
   <section class="sky">
-    <div class="wrap">
-      <h1>Naujas horizontas kasdien</h1>
-      <p class="lead">Orizo Labs — švietimo įmonė iš Ukrainos. Kuriame mokymosi programėles, kurios padeda žmonėms užtikrintai gyventi naujoje realybėje: prabilti naujoje šalyje, pasiruošti krizei, įvaldyti naują darbą.</p>
-      <div class="actions">
-        <a class="btn btn-sun" href="#products">Mūsų produktai</a>
-        <a class="btn btn-ghost" href="#partners">Partneriams ir investuotojams</a>
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <h1>Naujas horizontas kasdien</h1>
+        <p class="lead">Orizo Labs — švietimo įmonė iš Ukrainos. Kuriame mokymosi programėles, kurios padeda žmonėms užtikrintai gyventi naujoje realybėje: prabilti naujoje šalyje, pasiruošti krizei, įvaldyti naują darbą.</p>
+        <div class="actions">
+          <a class="btn btn-sun" href="#products">Mūsų produktai</a>
+          <a class="btn btn-ghost" href="investors/">Partneriams ir investuotojams</a>
+        </div>
+      </div>
+      <div class="phones" aria-hidden="true">
+        <div class="phone p1"><img src="../assets/shot-1-home.jpg" width="640" height="1385" alt=""></div>
+        <div class="phone p2"><img src="../assets/academy/ra-home.jpg" width="640" height="1385" alt=""></div>
       </div>
     </div>
     <div class="horizon" aria-hidden="true"><div class="sun"></div></div>
@@ -94,6 +101,15 @@
             <div class="meta"><span class="status dev">Kuriama</span><span class="more">Apie produktą</span></div>
           </div>
         </a>
+        <div class="pcard cservice">
+          <div class="band"><img src="../assets/app-service-icon.png" width="240" height="240" alt=""></div>
+          <div class="body">
+            <span class="what">Žinios tarnybai</span>
+            <h3>Tarnybos akademija</h3>
+            <p>Instruktorių praktikų straipsniai, knygos ir vaizdo kursai kariams, rezervistams ir veteranams. Egzaminai ir sertifikatai.</p>
+            <div class="meta"><span class="status concept">Koncepcija</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -154,18 +170,6 @@
     </div>
   </section>
 
-  <section class="section product" aria-labelledby="how">
-    <div class="wrap">
-      <h2 id="how">Kaip dirbame</h2>
-      <div class="principles">
-        <div><h3>Iš gyvenimo, ne iš vadovėlio</h3><p>Mokome to, ko prireiks jau rytoj: vaistinėje, darbe, per oro pavojų, kelyje.</p></div>
-        <div><h3>Maži žingsniai kasdien</h3><p>Trumpos pamokos ir kartojimas tinkamu metu veikia geriau nei valanda kartą per savaitę.</p></div>
-        <div><h3>Paaiškinimai gimtąja kalba</h3><p>Sudėtingus dalykus lengviau suprasti ir įsiminti, kai jie paaiškinami kalba, kuria galvojate.</p></div>
-        <div><h3>Sąžininga prieiga</h3><p>Pagrindas nemokamas visiems, o tai, kas gelbsti gyvybes, niekada neslepiama už mokesčio.</p></div>
-      </div>
-    </div>
-  </section>
-
   <section class="section partners" id="partners" aria-labelledby="partners-h">
     <div class="wrap grid">
       <div>
@@ -176,7 +180,7 @@
         <p class="name">Denys Udovyk</p>
         <p>Orizo Labs įkūrėjas</p>
         <p><a href="mailto:hello@orizolabs.com">hello@orizolabs.com</a></p>
-        <a class="btn btn-sun" href="mailto:hello@orizolabs.com?subject=Orizo%20Labs%20%E2%80%94%20partneryst%C4%97">Parašykite mums</a>
+        <div class="cta-row"><a class="btn btn-sun" href="mailto:hello@orizolabs.com?subject=Orizo%20Labs%20%E2%80%94%20partneryst%C4%97">Parašykite mums</a><a class="btn btn-ghost" href="investors/">Investuotojams</a></div>
       </div>
     </div>
   </section>
@@ -195,7 +199,7 @@
       </nav>
       <nav aria-labelledby="f-company">
         <h2 id="f-company">Įmonė</h2>
-        <ul><li><a href="../lt/#about">Apie mus</a></li><li><a href="../lt/#orgs">Organizacijoms</a></li><li><a href="../lt/#partners">Partneriams ir investuotojams</a></li></ul>
+        <ul><li><a href="../lt/#about">Apie mus</a></li><li><a href="../lt/#orgs">Organizacijoms</a></li><li><a href="../lt/investors/">Investuotojams</a></li></ul>
       </nav>
       <nav aria-labelledby="f-help">
         <h2 id="f-help">Pagalba</h2>

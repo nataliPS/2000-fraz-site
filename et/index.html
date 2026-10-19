@@ -38,6 +38,7 @@
       <a href="#products">Tooted</a>
       <a class="hide-sm" href="#orgs">Organisatsioonidele</a>
       <a class="hide-sm" href="#about">Meist</a>
+      <a class="hide-sm" href="investors/">Investoritele</a>
       <details class="langsw">
   <summary aria-label="Saidi keel: Eesti"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>ET</summary>
   <ul><li><a href="../" lang="uk" hreflang="uk">Українська</a></li><li><a href="../en/" lang="en" hreflang="en">English</a></li><li><a href="../pl/" lang="pl" hreflang="pl">Polski</a></li><li><a href="../lt/" lang="lt" hreflang="lt">Lietuvių</a></li><li><a href="../lv/" lang="lv" hreflang="lv">Latviešu</a></li><li><a href="../et/" lang="et" hreflang="et" aria-current="true">Eesti</a></li><li><a href="../sk/" lang="sk" hreflang="sk">Slovenčina</a></li></ul>
@@ -49,12 +50,18 @@
 
 <main id="main">
   <section class="sky">
-    <div class="wrap">
-      <h1>Iga päev uus silmapiir</h1>
-      <p class="lead">Orizo Labs on haridusettevõte Ukrainast. Loome õpirakendusi, mis aitavad inimestel uues reaalsuses enesekindlalt elada: rääkima hakata uues riigis, kriisiks valmistuda ja uut tööd omandada.</p>
-      <div class="actions">
-        <a class="btn btn-sun" href="#products">Meie tooted</a>
-        <a class="btn btn-ghost" href="#partners">Partneritele ja investoritele</a>
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <h1>Iga päev uus silmapiir</h1>
+        <p class="lead">Orizo Labs on haridusettevõte Ukrainast. Loome õpirakendusi, mis aitavad inimestel uues reaalsuses enesekindlalt elada: rääkima hakata uues riigis, kriisiks valmistuda ja uut tööd omandada.</p>
+        <div class="actions">
+          <a class="btn btn-sun" href="#products">Meie tooted</a>
+          <a class="btn btn-ghost" href="investors/">Partneritele ja investoritele</a>
+        </div>
+      </div>
+      <div class="phones" aria-hidden="true">
+        <div class="phone p1"><img src="../assets/shot-1-home.jpg" width="640" height="1385" alt=""></div>
+        <div class="phone p2"><img src="../assets/academy/ra-home.jpg" width="640" height="1385" alt=""></div>
       </div>
     </div>
     <div class="horizon" aria-hidden="true"><div class="sun"></div></div>
@@ -94,6 +101,15 @@
             <div class="meta"><span class="status dev">Arenduses</span><span class="more">Tootest lähemalt</span></div>
           </div>
         </a>
+        <div class="pcard cservice">
+          <div class="band"><img src="../assets/app-service-icon.png" width="240" height="240" alt=""></div>
+          <div class="body">
+            <span class="what">Teadmised teenistuseks</span>
+            <h3>Teenistusakadeemia</h3>
+            <p>Artiklid, raamatud ja videokursused praktilistelt instruktoritelt kaitseväelastele, reservistidele ja veteranidele. Eksamid ja tunnistused.</p>
+            <div class="meta"><span class="status concept">Kontseptsioon</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -154,18 +170,6 @@
     </div>
   </section>
 
-  <section class="section product" aria-labelledby="how">
-    <div class="wrap">
-      <h2 id="how">Kuidas me töötame</h2>
-      <div class="principles">
-        <div><h3>Elust, mitte õpikust</h3><p>Õpetame seda, mida läheb vaja juba homme: apteegis, tööl, õhuhäire ajal, teel.</p></div>
-        <div><h3>Väikesed sammud iga päev</h3><p>Lühikesed tunnid ja õigel ajal kordamine toimivad paremini kui üks pikk tund nädalas.</p></div>
-        <div><h3>Selgitused emakeeles</h3><p>Keerulist on lihtsam mõista ja meelde jätta, kui seda selgitatakse keeles, milles mõtled.</p></div>
-        <div><h3>Aus ligipääs</h3><p>Põhiosa on kõigile tasuta ja seda, mis päästab elusid, me tasulise sisu taha ei peida.</p></div>
-      </div>
-    </div>
-  </section>
-
   <section class="section partners" id="partners" aria-labelledby="partners-h">
     <div class="wrap grid">
       <div>
@@ -176,7 +180,7 @@
         <p class="name">Denys Udovyk</p>
         <p>Orizo Labsi asutaja</p>
         <p><a href="mailto:hello@orizolabs.com">hello@orizolabs.com</a></p>
-        <a class="btn btn-sun" href="mailto:hello@orizolabs.com?subject=Orizo%20Labs%20%E2%80%94%20koost%C3%B6%C3%B6">Kirjuta meile</a>
+        <div class="cta-row"><a class="btn btn-sun" href="mailto:hello@orizolabs.com?subject=Orizo%20Labs%20%E2%80%94%20koost%C3%B6%C3%B6">Kirjuta meile</a><a class="btn btn-ghost" href="investors/">Investoritele</a></div>
       </div>
     </div>
   </section>
@@ -195,7 +199,7 @@
       </nav>
       <nav aria-labelledby="f-company">
         <h2 id="f-company">Ettevõte</h2>
-        <ul><li><a href="../et/#about">Meist</a></li><li><a href="../et/#orgs">Organisatsioonidele</a></li><li><a href="../et/#partners">Partneritele ja investoritele</a></li></ul>
+        <ul><li><a href="../et/#about">Meist</a></li><li><a href="../et/#orgs">Organisatsioonidele</a></li><li><a href="../et/investors/">Investoritele</a></li></ul>
       </nav>
       <nav aria-labelledby="f-help">
         <h2 id="f-help">Abi</h2>

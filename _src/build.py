@@ -24,6 +24,7 @@ PAGES = {
     "p2000":   ("p2000.html",   "2000/",        "t2_title",   "t2_desc",   "t2_title",  "t2_og",    "t2_foot"),
     "academy": ("academy.html", "academy/",     "ta_title",   "ta_desc",   "ta_title",  "ta_og",    "ta_foot"),
     "support": ("support.html", "support.html", "ts_title",   "ts_desc",   "ts_title",  "ts_desc",  "foot_tagline"),
+    "investors": ("investors.html", "investors/", "inv_title", "inv_desc", "inv_title", "inv_desc", "foot_tagline"),
 }
 
 

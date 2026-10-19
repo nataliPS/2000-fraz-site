@@ -8,6 +8,7 @@
       <a href="#products">{{nav_products}}</a>
       <a class="hide-sm" href="#orgs">{{nav_orgs}}</a>
       <a class="hide-sm" href="#about">{{nav_about}}</a>
+      <a class="hide-sm" href="investors/">{{nav_investors}}</a>
       {{>_langmenu}}
     </nav>
   </div>
@@ -15,12 +16,18 @@
 
 <main id="main">
   <section class="sky">
-    <div class="wrap">
-      <h1>{{hero_h1}}</h1>
-      <p class="lead">{{hero_lead}}</p>
-      <div class="actions">
-        <a class="btn btn-sun" href="#products">{{hero_btn1}}</a>
-        <a class="btn btn-ghost" href="#partners">{{hero_btn2}}</a>
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <h1>{{hero_h1}}</h1>
+        <p class="lead">{{hero_lead}}</p>
+        <div class="actions">
+          <a class="btn btn-sun" href="#products">{{hero_btn1}}</a>
+          <a class="btn btn-ghost" href="investors/">{{hero_btn2}}</a>
+        </div>
+      </div>
+      <div class="phones" aria-hidden="true">
+        <div class="phone p1"><img src="{{R}}assets/shot-1-home.jpg" width="640" height="1385" alt=""></div>
+        <div class="phone p2"><img src="{{R}}assets/academy/ra-home.jpg" width="640" height="1385" alt=""></div>
       </div>
     </div>
     <div class="horizon" aria-hidden="true"><div class="sun"></div></div>
@@ -60,6 +67,15 @@
             <div class="meta"><span class="status dev">{{status_dev}}</span><span class="more">{{more}}</span></div>
           </div>
         </a>
+        <div class="pcard cservice">
+          <div class="band"><img src="{{R}}assets/app-service-icon.png" width="240" height="240" alt=""></div>
+          <div class="body">
+            <span class="what">{{psvc_what}}</span>
+            <h3>{{psvc_name}}</h3>
+            <p>{{psvc_desc}}</p>
+            <div class="meta"><span class="status concept">{{status_concept}}</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -120,18 +136,6 @@
     </div>
   </section>
 
-  <section class="section product" aria-labelledby="how">
-    <div class="wrap">
-      <h2 id="how">{{how_h}}</h2>
-      <div class="principles">
-        <div><h3>{{pr1_h}}</h3><p>{{pr1_p}}</p></div>
-        <div><h3>{{pr2_h}}</h3><p>{{pr2_p}}</p></div>
-        <div><h3>{{pr3_h}}</h3><p>{{pr3_p}}</p></div>
-        <div><h3>{{pr4_h}}</h3><p>{{pr4_p}}</p></div>
-      </div>
-    </div>
-  </section>
-
   <section class="section partners" id="partners" aria-labelledby="partners-h">
     <div class="wrap grid">
       <div>
@@ -142,7 +146,7 @@
         <p class="name">Denys Udovyk</p>
         <p>{{founder_role}}</p>
         <p><a href="mailto:hello@orizolabs.com">hello@orizolabs.com</a></p>
-        <a class="btn btn-sun" href="mailto:hello@orizolabs.com?subject={{subj_partner|url}}">{{write_us}}</a>
+        <div class="cta-row"><a class="btn btn-sun" href="mailto:hello@orizolabs.com?subject={{subj_partner|url}}">{{write_us}}</a><a class="btn btn-ghost" href="investors/">{{nav_investors}}</a></div>
       </div>
     </div>
   </section>
