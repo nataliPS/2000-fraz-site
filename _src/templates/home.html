@@ -108,21 +108,7 @@
     </div>
   </section>
 
-  <section class="section product" aria-labelledby="path-h">
-    <div class="wrap">
-      <h2 id="path-h">{{path_h}}</h2>
-      <p class="intro">{{path_intro}}</p>
-      <ol class="path">
-        <li class="now"><span class="when">{{now}}</span><h3>{{path1_h}}</h3><p>{{path1_p}}</p></li>
-        <li class="now"><span class="when">{{now}}</span><h3>{{path2_h}}</h3><p>{{path2_p}}</p></li>
-        <li><span class="when">2027</span><h3>{{path3_h}}</h3><p>{{path3_p}}</p></li>
-        <li><span class="when">2027</span><h3>{{path4_h}}</h3><p>{{path4_p}}</p></li>
-        <li><span class="when">2028</span><h3>{{path5_h}}</h3><p>{{path5_p}}</p></li>
-        <li><span class="when">2028</span><h3>{{path6_h}}</h3><p>{{path6_p}}</p></li>
-      </ol>
-    </div>
-  </section>
-
+{{>_team}}
   <section class="section story" id="about" aria-labelledby="story-h">
     <div class="wrap">
       <div class="story-text">
@@ -130,12 +116,6 @@
         <h2 id="story-h">{{story_h}}</h2>
         <p>{{story_p1}}</p>
         <p>{{story_p2}}</p>
-      </div>
-      <h3 class="exp-h">{{exp_h}}</h3>
-      <div class="exp">
-        <div><h4>{{exp1_h}}</h4><p>{{exp1_p}}</p></div>
-        <div><h4>{{exp2_h}}</h4><p>{{exp2_p}}</p></div>
-        <div><h4>{{exp3_h}}</h4><p>{{exp3_p}}</p></div>
       </div>
     </div>
   </section>
@@ -152,7 +132,7 @@
     </div>
   </section>
 
-{{>_team}}  <section class="section" id="orgs" aria-labelledby="orgs-h">
+  <section class="section" id="orgs" aria-labelledby="orgs-h">
     <div class="wrap">
       <h2 id="orgs-h">{{orgs_h}}</h2>
       <p class="intro">{{orgs_intro}}</p>
@@ -162,6 +142,21 @@
         <div><h3>{{org3_h}}</h3><p>{{org3_p}}</p></div>
         <div><h3>{{org4_h}}</h3><p>{{org4_p}}</p></div>
       </div>
+    </div>
+  </section>
+
+  <section class="section product" aria-labelledby="path-h">
+    <div class="wrap">
+      <h2 id="path-h">{{path_h}}</h2>
+      <p class="intro">{{path_intro}}</p>
+      <ol class="path">
+        <li class="now"><span class="when">{{now}}</span><h3>{{path1_h}}</h3><p>{{path1_p}}</p></li>
+        <li class="now"><span class="when">{{now}}</span><h3>{{path2_h}}</h3><p>{{path2_p}}</p></li>
+        <li><span class="when">2027</span><h3>{{path3_h}}</h3><p>{{path3_p}}</p></li>
+        <li><span class="when">2027</span><h3>{{path4_h}}</h3><p>{{path4_p}}</p></li>
+        <li><span class="when">2028</span><h3>{{path5_h}}</h3><p>{{path5_p}}</p></li>
+        <li><span class="when">2028</span><h3>{{path6_h}}</h3><p>{{path6_p}}</p></li>
+      </ol>
     </div>
   </section>
 
