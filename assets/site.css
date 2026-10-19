@@ -354,3 +354,4 @@ p{margin:0}
   .phone{width:150px}
   .phone.p2{top:50px}
 }
+.why-value{margin-top:56px;padding-left:28px;border-left:6px solid var(--dawn);font-family:var(--head);font-weight:700;font-size:clamp(24px,3vw,36px);line-height:1.2;max-width:920px}
