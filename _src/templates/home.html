@@ -1,9 +1,9 @@
 {{>_head}}
-<body>
+<body class="lighttop">
 <a class="skip" href="#main">{{skip}}</a>
 <header class="top">
   <div class="wrap">
-    <a class="logo" href="./" aria-label="{{home_aria}}"><img src="{{R}}assets/orizo-logo-white.svg" alt="Orizo" width="529" height="148"></a>
+    <a class="logo" href="./" aria-label="{{home_aria}}"><img src="{{R}}assets/orizo-logo.svg" alt="Orizo" width="529" height="148"></a>
     <nav aria-label="{{nav_aria}}">
       <a href="#products">{{nav_products}}</a>
       <a class="hide-sm" href="#orgs">{{nav_orgs}}</a>
@@ -25,13 +25,17 @@
           <a class="btn btn-sun" href="#products">{{hero_btn1}}</a>
           <a class="btn btn-ghost" href="investors/">{{hero_btn2}}</a>
         </div>
+        <ul class="trust">
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{pg1_h}}</li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{pg2_h}}</li>
+          <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{pg3_h}}</li>
+        </ul>
       </div>
       <div class="phones" aria-hidden="true">
         <div class="phone p1"><img src="{{R}}assets/shot-1-home.jpg" width="640" height="1385" alt=""></div>
         <div class="phone p2"><img src="{{R}}assets/academy/ra-home.jpg" width="640" height="1385" alt=""></div>
       </div>
     </div>
-    <div class="horizon" aria-hidden="true"><div class="sun"></div></div>
   </section>
 
   <section class="numbers" aria-label="{{num_aria}}">
