@@ -64,6 +64,8 @@ def render(tpl, ctx):
 
 
 def main():
+    import hashlib
+    ver = hashlib.sha1(((SITE / "assets" / "site.css").read_bytes() + (SITE / "assets" / "site.js").read_bytes())).hexdigest()[:8]
     uk = load("uk")
     keys = set(uk)
     for lang in LANGS:
@@ -90,7 +92,7 @@ def main():
                 f'<a href="{R}{lang_base(l)}{rel}" lang="{l}" hreflang="{l}">{NATIVE[l]}</a>'
                 for l in LANGS if l != lang)
             ctx = dict(t, lang=lang, R=R, L=L, URL=url, ALTERNATES="\n".join(alts),
-                       LANGMENU=menu, FOOTLANGS=footlangs, LANGCODE=("UA" if lang == "uk" else lang.upper()),
+                       LANGMENU=menu, ASSET_V=ver, FOOTLANGS=footlangs, LANGCODE=("UA" if lang == "uk" else lang.upper()),
                        lang_native=NATIVE[lang], og_locale=OG[lang],
                        TITLE=t[kt], DESC=t[kd], OGTITLE=t[kot], OGDESC=t[kod], FOOTNOTE=t[kfoot])
             html = render((SRC / "templates" / tplname).read_text(encoding="utf-8"), ctx)
