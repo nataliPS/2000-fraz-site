@@ -80,7 +80,7 @@ def main():
         for page, (tplname, rel, kt, kd, kot, kod, kfoot) in PAGES.items():
             path = out_path(lang, rel)
             R = "../" * depth(path)
-            L = R + lang_base(lang)
+            L = (R + lang_base(lang)) or "./"
             url = BASE + lang_base(lang) + rel
             alts = [f'<link rel="alternate" hreflang="{l}" href="{BASE}{lang_base(l)}{rel}">' for l in LANGS]
             alts.append(f'<link rel="alternate" hreflang="x-default" href="{BASE}{lang_base("en")}{rel}">')

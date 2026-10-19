@@ -170,7 +170,7 @@ p{margin:0}
 /* кожен продукт має свій колір героя; рамка (шапка, підвал) — спільна, Orizo */
 .sky{background:var(--hero,var(--night))}
 .sky .lead{color:var(--hero-soft,var(--on-night-soft))}
-.p-2000{--hero:#1F4FD1;--hero-soft:#DCE4FA;--p-accent:#F2C200;--p-accent-ink:#14213D}
+.p-2000{--hero:#1F4FD1;--hero-soft:#DCE4FA;--p-accent:#E9B64F;--p-accent-ink:#17302D}
 .p-academy{--hero:#1F3A5F;--hero-soft:#C9D3E2;--p-accent:#F2B544;--p-accent-ink:#15233B;--mist:#F3F0E8;--line:#E2DDD1}
 .p-2000 .btn-sun,.p-academy .btn-sun{background:var(--p-accent);color:var(--p-accent-ink)}
 .top .crumb{display:flex;align-items:center;gap:14px;min-width:0}
@@ -327,7 +327,7 @@ p{margin:0}
 .shots4 figcaption{margin-top:16px;color:var(--ink-soft);font-size:16px;line-height:1.45}
 
 /* інвесторам */
-.p-invest{--hero:#14213D}
+.p-invest{--hero:#0F4C47}
 .bignums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin-top:48px}
 .bignums b{display:block;font-family:var(--head);font-weight:700;font-size:clamp(44px,5vw,64px);line-height:1;color:var(--night)}
 .bignums b::after{content:"";display:block;width:56px;height:5px;background:var(--dawn);margin:18px 0 0}
