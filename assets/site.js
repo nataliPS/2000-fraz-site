@@ -1,7 +1,7 @@
 // Orizo Labs: легкі анімації при прокручуванні. Без JS сторінка повністю видима.
 (function () {
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var auto = '.pcard, .exp > div, .shots4 figure, .bignums > div, .built > div, .orgs > div, .numbers dl > div, .values blockquote, .why-value';
+  var auto = '.pcard, .pledges > div, .role, .exp > div, .shots4 figure, .bignums > div, .built > div, .orgs > div, .numbers dl > div, .values blockquote, .why-value';
   document.querySelectorAll(auto).forEach(function (el) { el.setAttribute('data-reveal', ''); });
   var els = document.querySelectorAll('[data-reveal]');
 

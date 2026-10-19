@@ -416,3 +416,25 @@ p{margin:0}
   .pipe::before,.pipe::after{display:none}
   .pipe li:not(:last-child)::after{content:"";position:absolute;left:23px;top:48px;bottom:-28px;width:3px;background:var(--dawn)}
 }
+
+/* ---------- місія, обіцянка, напрями ---------- */
+.mission{display:inline-block;color:var(--dawn);font-family:var(--head);font-weight:600;font-size:clamp(15px,1.5vw,18px);line-height:1.4;max-width:34em;margin-bottom:22px;padding-left:14px;border-left:3px solid var(--dawn)}
+.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.pcard.chealth{border-style:dashed}
+.pcard.chealth .band{background:#FCEDEA}
+.pledge{background:var(--night);color:var(--on-night)}
+.pledge h2{color:var(--on-night)}
+.pledge .kicker{display:inline-block;font-family:var(--head);font-weight:600;color:var(--dawn);font-size:17px;margin-bottom:14px}
+.pledges{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;margin-top:48px}
+.pledges > div{border:1px solid rgba(246,247,251,.16);border-radius:22px;padding:30px 28px;background:rgba(246,247,251,.04)}
+.pledges svg{width:40px;height:40px;color:var(--dawn)}
+.pledges h3{font-size:24px;font-weight:600;margin-top:18px;color:var(--on-night)}
+.pledges p{margin-top:10px;color:var(--on-night-soft)}
+.path{grid-template-columns:repeat(6,minmax(0,1fr));gap:20px}
+.path h3{font-size:19px}
+.path p{font-size:15px}
+@media (max-width:1000px){.path{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:900px){
+  .products,.pledges{grid-template-columns:minmax(0,1fr)}
+  .path{grid-template-columns:minmax(0,1fr)}
+}

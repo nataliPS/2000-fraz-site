@@ -18,6 +18,7 @@
   <section class="sky">
     <div class="wrap hero-grid">
       <div class="hero-text">
+        <p class="mission">{{mission}}</p>
         <h1>{{hero_h1}}</h1>
         <p class="lead">{{hero_lead}}</p>
         <div class="actions">
@@ -76,6 +77,27 @@
             <div class="meta"><span class="status concept">{{status_concept}}</span></div>
           </div>
         </div>
+        <div class="pcard chealth">
+          <div class="band"><svg viewBox="0 0 64 64" width="120" height="120" aria-hidden="true"><path d="M32 54S8 40 8 23a12 12 0 0 1 24-4 12 12 0 0 1 24 4c0 17-24 31-24 31z" fill="#E4573D"/><path d="M14 31h10l4-8 6 16 4-8h12" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="body">
+            <span class="what">{{ph_what}}</span>
+            <h3>{{ph_name}}</h3>
+            <p>{{ph_desc}}</p>
+            <div class="meta"><span class="status concept">{{status_plan}}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pledge" aria-labelledby="pledge-h">
+    <div class="wrap">
+      <span class="kicker">{{pg_kicker}}</span>
+      <h2 id="pledge-h">{{pg_h}}</h2>
+      <div class="pledges">
+        <div><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4l13 5v10c0 8-6 14-13 17C13 33 7 27 7 19V9z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><path d="M14 20l4 4 8-8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>{{pg1_h}}</h3><p>{{pg1_p}}</p></div>
+        <div><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M5 20h30M20 5c4.5 4.5 4.5 25.5 0 30M20 5c-4.5 4.5-4.5 25.5 0 30" fill="none" stroke="currentColor" stroke-width="2.6"/></svg><h3>{{pg2_h}}</h3><p>{{pg2_p}}</p></div>
+        <div><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 15a20 20 0 0 1 28 0M11 21a12 12 0 0 1 18 0M16 27a5 5 0 0 1 8 0" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><path d="M6 6l28 28" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><circle cx="20" cy="32" r="2" fill="currentColor"/></svg><h3>{{pg3_h}}</h3><p>{{pg3_p}}</p></div>
       </div>
     </div>
   </section>
@@ -90,6 +112,7 @@
         <li><span class="when">2027</span><h3>{{path3_h}}</h3><p>{{path3_p}}</p></li>
         <li><span class="when">2027</span><h3>{{path4_h}}</h3><p>{{path4_p}}</p></li>
         <li><span class="when">2028</span><h3>{{path5_h}}</h3><p>{{path5_p}}</p></li>
+        <li><span class="when">2028</span><h3>{{path6_h}}</h3><p>{{path6_p}}</p></li>
       </ol>
     </div>
   </section>
