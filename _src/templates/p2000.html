@@ -1,0 +1,86 @@
+{{>_head}}
+<body class="p-2000">
+<a class="skip" href="#main">{{skip}}</a>
+<header class="top">
+  <div class="wrap">
+    <div class="crumb">
+      <a class="logo" href="{{L}}" aria-label="{{home_aria}}"><img src="{{R}}assets/orizo-logo-white.svg" alt="Orizo" width="529" height="148"></a>
+      <span>{{p2000_name}}</span>
+    </div>
+    <nav aria-label="{{nav_aria}}">
+      <a class="hide-sm" href="{{L}}support.html">{{f_support}}</a>
+      <a class="hide-sm" href="{{L}}#products">{{nav_all}}</a>
+      {{>_langmenu}}
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="sky sky-plain">
+    <div class="wrap">
+      <div class="app-head">
+        <img src="{{R}}assets/app-2000-icon.png" width="240" height="240" alt="">
+        <p>{{t2_kicker}}</p>
+      </div>
+      <h1 style="margin-top:28px">{{p2000_name}}</h1>
+      <p class="lead">{{t2_lead}}</p>
+      <div class="langs" aria-label="{{langs_aria}}">
+        <span>{{lang_en}}</span><span>{{lang_pl}}</span><span>{{lang_de}}</span><span>{{lang_es}}</span>
+      </div>
+      <div class="actions">
+        <span class="btn btn-sun" aria-disabled="true">{{soon_appstore}}</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="inside">
+    <div class="wrap">
+      <h2 id="inside">{{inside_h}}</h2>
+      <p class="intro">{{inside_intro}}</p>
+      <div class="cols3">
+        <div>
+          <img src="{{R}}assets/shot-1-home.jpg" width="640" height="1385" alt="{{s1_alt}}" loading="lazy">
+          <h3>{{s1_h}}</h3><p>{{s1_p}}</p>
+        </div>
+        <div>
+          <img src="{{R}}assets/shot-3-correct.jpg" width="640" height="1385" alt="{{s2_alt}}" loading="lazy">
+          <h3>{{s2_h}}</h3><p>{{s2_p}}</p>
+        </div>
+        <div>
+          <img src="{{R}}assets/shot-6-reading.jpg" width="640" height="1385" alt="{{s3_alt}}" loading="lazy">
+          <h3>{{s3_h}}</h3><p>{{s3_p}}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section product" aria-labelledby="price">
+    <div class="wrap">
+      <h2 id="price">{{price_h}}</h2>
+      <div class="plans">
+        <div class="plan">
+          <h3>{{free_h}}</h3>
+          <ul><li>{{free1}}</li><li>{{free2}}</li><li>{{free3}}</li><li>{{free4}}</li></ul>
+        </div>
+        <div class="plan plus">
+          <h3>{{plus_h}}</h3>
+          <ul><li>{{plus1}}</li><li>{{plus2}}</li><li>{{plus3}}</li><li>{{plus4}}</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="faq-h">
+    <div class="wrap">
+      <h2 id="faq-h">{{faq_h}}</h2>
+      <div class="faq">
+        <details><summary>{{q1}}</summary><p>{{a1}}</p></details>
+        <details><summary>{{q2}}</summary><p>{{a2}}</p></details>
+        <details><summary>{{q3}}</summary><p>{{a3}}</p></details>
+        <details><summary>{{q4}}</summary><p>{{a4}}</p></details>
+        <details><summary>{{q5}}</summary><p>{{a5}}</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+{{>_foot}}

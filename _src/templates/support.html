@@ -1,0 +1,36 @@
+{{>_head}}
+<body>
+<a class="skip" href="#main">{{skip}}</a>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="{{L}}" aria-label="{{home_aria}}"><img src="{{R}}assets/orizo-logo-white.svg" alt="Orizo" width="529" height="148"></a>
+    <nav aria-label="{{nav_aria}}">
+      <a href="{{L}}2000/">{{p2000_name}}</a>
+      <a class="hide-sm" href="support.html" aria-current="page">{{f_support}}</a>
+      {{>_langmenu}}
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="sky sky-plain">
+    <div class="wrap">
+      <h1>{{f_support}}</h1>
+      <p class="lead">{{ts_lead}}</p>
+      <div class="actions">
+        <a class="btn btn-sun" href="mailto:support@orizolabs.com?subject={{ts_subj|url}}">{{ts_btn}}</a>
+      </div>
+    </div>
+  </section>
+  <section class="doc">
+    <div class="wrap">
+      <p>{{ts_p}}</p>
+      <h2>{{ts_h_progress}}</h2>
+      <p>{{a2}}</p>
+      <h2>{{ts_h_plus}}</h2>
+      <p>{{ts_plus}}</p>
+      <h2>{{ts_h_priv}}</h2>
+      <p>{{ts_priv}}</p>
+    </div>
+  </section>
+</main>
+{{>_foot}}

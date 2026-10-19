@@ -1,0 +1,138 @@
+{{>_head}}
+<body>
+<a class="skip" href="#main">{{skip}}</a>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="./" aria-label="{{home_aria}}"><img src="{{R}}assets/orizo-logo-white.svg" alt="Orizo" width="529" height="148"></a>
+    <nav aria-label="{{nav_aria}}">
+      <a href="#products">{{nav_products}}</a>
+      <a class="hide-sm" href="#orgs">{{nav_orgs}}</a>
+      <a class="hide-sm" href="#about">{{nav_about}}</a>
+      {{>_langmenu}}
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="sky">
+    <div class="wrap">
+      <h1>{{hero_h1}}</h1>
+      <p class="lead">{{hero_lead}}</p>
+      <div class="actions">
+        <a class="btn btn-sun" href="#products">{{hero_btn1}}</a>
+        <a class="btn btn-ghost" href="#partners">{{hero_btn2}}</a>
+      </div>
+    </div>
+    <div class="horizon" aria-hidden="true"><div class="sun"></div></div>
+  </section>
+
+  <section class="numbers" aria-label="{{num_aria}}">
+    <div class="wrap">
+      <dl>
+        <div><dt>{{num1_v}}</dt><dd>{{num1_t}}</dd></div>
+        <div><dt>{{num2_v}}</dt><dd>{{num2_t}}</dd></div>
+        <div><dt>{{num3_v}}</dt><dd>{{num3_t}}</dd></div>
+        <div><dt>{{num4_v}}</dt><dd>{{num4_t}}</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" id="products" aria-labelledby="products-h">
+    <div class="wrap">
+      <h2 id="products-h">{{products_h}}</h2>
+      <p class="intro">{{products_intro}}</p>
+      <div class="products">
+        <a class="pcard c2000" href="2000/">
+          <div class="band"><img src="{{R}}assets/app-2000-icon.png" width="240" height="240" alt=""></div>
+          <div class="body">
+            <span class="what">{{p2000_what}}</span>
+            <h3>{{p2000_name}}</h3>
+            <p>{{p2000_desc}}</p>
+            <div class="meta"><span class="status soon">{{soon_appstore}}</span><span class="more">{{more}}</span></div>
+          </div>
+        </a>
+        <a class="pcard cacademy" href="academy/">
+          <div class="band"><img src="{{R}}assets/academy/faculty-ready.svg" width="160" height="100" alt=""></div>
+          <div class="body">
+            <span class="what">{{pacad_what}}</span>
+            <h3>{{pacad_name}}</h3>
+            <p>{{pacad_desc}}</p>
+            <div class="meta"><span class="status dev">{{status_dev}}</span><span class="more">{{more}}</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section product" aria-labelledby="path-h">
+    <div class="wrap">
+      <h2 id="path-h">{{path_h}}</h2>
+      <p class="intro">{{path_intro}}</p>
+      <ol class="path">
+        <li class="now"><span class="when">{{now}}</span><h3>{{path1_h}}</h3><p>{{path1_p}}</p></li>
+        <li class="now"><span class="when">{{now}}</span><h3>{{path2_h}}</h3><p>{{path2_p}}</p></li>
+        <li><span class="when">2027</span><h3>{{path3_h}}</h3><p>{{path3_p}}</p></li>
+        <li><span class="when">2027</span><h3>{{path4_h}}</h3><p>{{path4_p}}</p></li>
+        <li><span class="when">2028</span><h3>{{path5_h}}</h3><p>{{path5_p}}</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section story" id="about" aria-labelledby="story-h">
+    <div class="wrap">
+      <div class="story-text">
+        <span class="kicker">{{nav_about}}</span>
+        <h2 id="story-h">{{story_h}}</h2>
+        <p>{{story_p1}}</p>
+        <p>{{story_p2}}</p>
+      </div>
+      <h3 class="exp-h">{{exp_h}}</h3>
+      <div class="exp">
+        <div><h4>{{exp1_h}}</h4><p>{{exp1_p}}</p></div>
+        <div><h4>{{exp2_h}}</h4><p>{{exp2_p}}</p></div>
+        <div><h4>{{exp3_h}}</h4><p>{{exp3_p}}</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="orgs" aria-labelledby="orgs-h">
+    <div class="wrap">
+      <h2 id="orgs-h">{{orgs_h}}</h2>
+      <p class="intro">{{orgs_intro}}</p>
+      <div class="orgs">
+        <div><h3>{{org1_h}}</h3><p>{{org1_p}}</p></div>
+        <div><h3>{{org2_h}}</h3><p>{{org2_p}}</p></div>
+        <div><h3>{{org3_h}}</h3><p>{{org3_p}}</p></div>
+        <div><h3>{{org4_h}}</h3><p>{{org4_p}}</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section product" aria-labelledby="how">
+    <div class="wrap">
+      <h2 id="how">{{how_h}}</h2>
+      <div class="principles">
+        <div><h3>{{pr1_h}}</h3><p>{{pr1_p}}</p></div>
+        <div><h3>{{pr2_h}}</h3><p>{{pr2_p}}</p></div>
+        <div><h3>{{pr3_h}}</h3><p>{{pr3_p}}</p></div>
+        <div><h3>{{pr4_h}}</h3><p>{{pr4_p}}</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section partners" id="partners" aria-labelledby="partners-h">
+    <div class="wrap grid">
+      <div>
+        <h2 id="partners-h">{{partners_h}}</h2>
+        <p class="intro">{{partners_p}}</p>
+      </div>
+      <div class="contact-card">
+        <p class="name">Denys Udovyk</p>
+        <p>{{founder_role}}</p>
+        <p><a href="mailto:hello@orizolabs.com">hello@orizolabs.com</a></p>
+        <a class="btn btn-sun" href="mailto:hello@orizolabs.com?subject={{subj_partner|url}}">{{write_us}}</a>
+      </div>
+    </div>
+  </section>
+</main>
+{{>_foot}}
