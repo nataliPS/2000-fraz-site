@@ -3,7 +3,7 @@
 
 Запуск із кореня репозиторію:  python3 _src/build.py
 Українська — у корені сайту, інші мови — у папках /en/, /pl/, /lt/, /lv/, /et/, /sk/.
-privacy.html і 404.html не генеруються: правте їх вручну.
+privacy.html, academy/privacy.html і 404.html не генеруються: правте їх вручну.
 """
 import json, re, sys, urllib.parse
 from pathlib import Path
@@ -104,7 +104,7 @@ def main():
             dest.write_text(html, encoding="utf-8")
             written.append((path, url))
 
-    urls = [u for _, u in written] + [BASE + "privacy.html"]
+    urls = [u for _, u in written] + [BASE + "privacy.html", BASE + "academy/privacy.html"]
     (SITE / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "".join(f"  <url><loc>{u}</loc></url>\n" for u in urls) + "</urlset>\n", encoding="utf-8")

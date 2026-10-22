@@ -12,6 +12,7 @@
 | Підтримка (Support URL для App Store) | `support.html` |
 | Для інвесторів | `investors/` |
 | Політика конфіденційності «2000 фраз» (Privacy URL) | `privacy.html` |
+| Політика конфіденційності «Академії готовності» (Privacy URL) | `academy/privacy.html` |
 
 ## Мови і як редагувати тексти
 
