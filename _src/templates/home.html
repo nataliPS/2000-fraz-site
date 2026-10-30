@@ -8,7 +8,6 @@
       <a href="#products">{{nav_products}}</a>
       <a class="hide-sm" href="#orgs">{{nav_orgs}}</a>
       <a class="hide-sm" href="#about">{{nav_about}}</a>
-      <a class="hide-sm" href="investors/">{{nav_investors}}</a>
       {{>_langmenu}}
     </nav>
   </div>
@@ -23,7 +22,7 @@
         <p class="lead">{{hero_lead}}</p>
         <div class="actions">
           <a class="btn btn-sun" href="#products">{{hero_btn1}}</a>
-          <a class="btn btn-ghost" href="investors/">{{hero_btn2}}</a>
+          <a class="btn btn-ghost" href="#partners">{{hero_btn2}}</a>
         </div>
         <ul class="trust">
           <li><svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{pg1_h}}</li>
@@ -31,21 +30,9 @@
           <li><svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{pg3_h}}</li>
         </ul>
       </div>
-      <div class="phones" aria-hidden="true">
+      <div class="phones phones-one" aria-hidden="true">
         <div class="phone p1"><img src="{{R}}assets/shot-1-home.jpg" width="640" height="1385" alt=""></div>
-        <div class="phone p2"><img src="{{R}}assets/academy/ra-home.jpg" width="640" height="1385" alt=""></div>
       </div>
-    </div>
-  </section>
-
-  <section class="numbers" aria-label="{{num_aria}}">
-    <div class="wrap">
-      <dl>
-        <div><dt>{{num1_v}}</dt><dd>{{num1_t}}</dd></div>
-        <div><dt>{{num2_v}}</dt><dd>{{num2_t}}</dd></div>
-        <div><dt>{{num3_v}}</dt><dd>{{num3_t}}</dd></div>
-        <div><dt>{{num4_v}}</dt><dd>{{num4_t}}</dd></div>
-      </dl>
     </div>
   </section>
 
@@ -66,21 +53,21 @@
           </div>
         </a>
         <a class="pcard cacademy" href="academy/">
-          <div class="band"><img src="{{R}}assets/academy/faculty-ready.svg" width="160" height="100" alt=""></div>
+          <div class="band"><svg viewBox="0 0 64 64" width="120" height="120" aria-hidden="true"><path d="M32 6l20 8v15c0 13-9 23-20 28-11-5-20-15-20-28V14z" fill="#1F3A5F"/><path d="M23 32l6 6 12-12" fill="none" stroke="#F2B544" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           <div class="body">
             <span class="what">{{pacad_what}}</span>
             <h3>{{pacad_name}}</h3>
             <p>{{pacad_desc}}</p>
-            <div class="meta"><span class="status dev">{{status_dev}}</span><span class="more">{{more}}</span></div>
+            <div class="meta"><span class="status dev">{{status_dev}}</span><span class="more">{{dir_more}}</span></div>
           </div>
         </a>
         <a class="pcard cpsd" href="psdinfo/">
-          <div class="band"><img src="{{R}}assets/psdinfo/icon.png" width="240" height="240" alt=""></div>
+          <div class="band"><svg viewBox="0 0 64 64" width="120" height="120" aria-hidden="true"><circle cx="32" cy="32" r="22" fill="none" stroke="#2F3B2A" stroke-width="4.4"/><circle cx="32" cy="32" r="11" fill="none" stroke="#2F3B2A" stroke-width="4.4"/><circle cx="32" cy="32" r="3.6" fill="#C8B98A"/><path d="M32 4v10M32 50v10M4 32h10M50 32h10" stroke="#2F3B2A" stroke-width="4.4" stroke-linecap="round"/></svg></div>
           <div class="body">
             <span class="what">{{psvc_what}}</span>
             <h3>{{psvc_name}}</h3>
             <p>{{psvc_desc}}</p>
-            <div class="meta"><span class="status dev">{{status_dev}}</span><span class="more">{{more}}</span></div>
+            <div class="meta"><span class="status dev">{{status_dev}}</span><span class="more">{{dir_more}}</span></div>
           </div>
         </a>
         <div class="pcard chealth">
@@ -103,8 +90,8 @@
       <p class="intro">{{why2_intro}}</p>
       <div class="xtabs" role="tablist" aria-label="{{why_kicker}}">
         <button type="button" role="tab" id="xt1" aria-controls="xp1" aria-selected="true"><img src="{{R}}assets/app-2000-icon.png" width="40" height="40" alt="">{{x1_tab}}</button>
-        <button type="button" role="tab" id="xt2" aria-controls="xp2" aria-selected="false"><img src="{{R}}assets/academy/faculty-ready.svg" width="40" height="40" alt="">{{x2_tab}}</button>
-        <button type="button" role="tab" id="xt3" aria-controls="xp3" aria-selected="false"><img src="{{R}}assets/psdinfo/icon.png" width="40" height="40" alt="">{{x3_tab}}</button>
+        <button type="button" role="tab" id="xt2" aria-controls="xp2" aria-selected="false"><span class="xti"><svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><path d="M32 6l20 8v15c0 13-9 23-20 28-11-5-20-15-20-28V14z" fill="#1F3A5F"/><path d="M23 32l6 6 12-12" fill="none" stroke="#F2B544" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>{{x2_tab}}</button>
+        <button type="button" role="tab" id="xt3" aria-controls="xp3" aria-selected="false"><span class="xti"><svg viewBox="0 0 64 64" width="28" height="28" aria-hidden="true"><circle cx="32" cy="32" r="22" fill="none" stroke="#2F3B2A" stroke-width="4.4"/><circle cx="32" cy="32" r="11" fill="none" stroke="#2F3B2A" stroke-width="4.4"/><circle cx="32" cy="32" r="3.6" fill="#C8B98A"/><path d="M32 4v10M32 50v10M4 32h10M50 32h10" stroke="#2F3B2A" stroke-width="4.4" stroke-linecap="round"/></svg></span>{{x3_tab}}</button>
       </div>
       <div class="xpanels">
         <div class="xpanel x2000" id="xp1" role="tabpanel" aria-labelledby="xt1">
@@ -120,30 +107,28 @@
             <a class="btn btn-night" href="2000/">{{x_more}}</a>
           </div>
         </div>
-        <div class="xpanel xacad" id="xp2" role="tabpanel" aria-labelledby="xt2">
-          <div class="xphone"><img src="{{R}}assets/academy/ra-scenario.jpg" width="640" height="1385" alt="" loading="lazy"></div>
+        <div class="xpanel xonly xacad" id="xp2" role="tabpanel" aria-labelledby="xt2">
+          <div class="xmark"><svg viewBox="0 0 64 64" width="96" height="96" aria-hidden="true"><path d="M32 6l20 8v15c0 13-9 23-20 28-11-5-20-15-20-28V14z" fill="#1F3A5F"/><path d="M23 32l6 6 12-12" fill="none" stroke="#F2B544" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
           <div class="xtext">
+            <span class="status dev">{{status_dev}}</span>
             <h3>{{x2_tab}}</h3>
             <p class="xlabel">{{x_problem_h}}</p>
             <p class="xproblem">{{x2_problem}}</p>
-            <p class="xlabel">{{x_gain_h}}</p>
-            <ul class="xgains"><li><svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{x2_g1}}</li><li><svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{x2_g2}}</li><li><svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{x2_g3}}</li></ul>
             <p class="xlabel">{{x_who_h}}</p>
             <p class="xwho">{{x2_who}}</p>
-            <a class="btn btn-night" href="academy/">{{x_more}}</a>
+            <a class="btn btn-night" href="academy/">{{dir_more}}</a>
           </div>
         </div>
-        <div class="xpanel xpsd" id="xp3" role="tabpanel" aria-labelledby="xt3">
-          <div class="xphone"><img src="{{R}}assets/psdinfo/psd-home.jpg" width="640" height="1385" alt="" loading="lazy"></div>
+        <div class="xpanel xonly xpsd" id="xp3" role="tabpanel" aria-labelledby="xt3">
+          <div class="xmark"><svg viewBox="0 0 64 64" width="96" height="96" aria-hidden="true"><circle cx="32" cy="32" r="22" fill="none" stroke="#2F3B2A" stroke-width="4.4"/><circle cx="32" cy="32" r="11" fill="none" stroke="#2F3B2A" stroke-width="4.4"/><circle cx="32" cy="32" r="3.6" fill="#C8B98A"/><path d="M32 4v10M32 50v10M4 32h10M50 32h10" stroke="#2F3B2A" stroke-width="4.4" stroke-linecap="round"/></svg></div>
           <div class="xtext">
+            <span class="status dev">{{status_dev}}</span>
             <h3>{{x3_tab}}</h3>
             <p class="xlabel">{{x_problem_h}}</p>
             <p class="xproblem">{{x3_problem}}</p>
-            <p class="xlabel">{{x_gain_h}}</p>
-            <ul class="xgains"><li><svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{x3_g1}}</li><li><svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{x3_g2}}</li><li><svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="#E3EEEA"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="#0F4C47" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{x3_g3}}</li></ul>
             <p class="xlabel">{{x_who_h}}</p>
             <p class="xwho">{{x3_who}}</p>
-            <a class="btn btn-night" href="psdinfo/">{{x_more}}</a>
+            <a class="btn btn-night" href="psdinfo/">{{dir_more}}</a>
           </div>
         </div>
       </div>
@@ -225,7 +210,7 @@
         <p class="name">Denys Udovyk</p>
         <p>{{founder_role}}</p>
         <p><a href="mailto:hello@orizolabs.com">hello@orizolabs.com</a></p>
-        <div class="cta-row"><a class="btn btn-sun" href="mailto:hello@orizolabs.com?subject={{subj_partner|url}}">{{write_us}}</a><a class="btn btn-ghost" href="investors/">{{nav_investors}}</a></div>
+        <div class="cta-row"><a class="btn btn-sun" href="mailto:hello@orizolabs.com?subject={{subj_partner|url}}">{{write_us}}</a></div>
       </div>
     </div>
   </section>

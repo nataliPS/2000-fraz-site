@@ -15,89 +15,17 @@
 </header>
 
 <main id="main">
-  <section class="sky sky-plain">
+  <section class="sky sky-plain dir-hero">
     <div class="wrap">
+      <p class="dir-kicker">{{pacad_what}}</p>
       <span class="status">{{status_dev}}</span>
       <h1 style="margin-top:20px">{{pacad_name}}</h1>
       <p class="lead">{{ta_lead}}</p>
-      <div class="langs" aria-label="{{langs_aria}}">
-        <span lang="uk">Українською</span><span lang="en">In English</span><span lang="lt">Lietuviškai</span><span>{{ta_offline}}</span>
-      </div>
       <div class="actions">
-        <a class="btn btn-sun" href="mailto:hello@orizolabs.com?subject={{ta_subj|url}}">{{ta_btn}}</a>
+        <a class="btn btn-sun" href="mailto:hello@orizolabs.com?subject={{ta_subj|url}}">{{write_us}}</a>
       </div>
     </div>
   </section>
-
-  <section class="section" aria-labelledby="screens-h">
-    <div class="wrap">
-      <h2 id="screens-h">{{scr_h}}</h2>
-      <p class="intro">{{scr_intro}}</p>
-      <div class="shots4">
-        <figure><img src="{{R}}assets/academy/ra-home.jpg" width="640" height="1385" alt="{{scr1}}" loading="lazy"><figcaption>{{scr1}}</figcaption></figure>
-        <figure><img src="{{R}}assets/academy/ra-lesson.jpg" width="640" height="1385" alt="{{scr2}}" loading="lazy"><figcaption>{{scr2}}</figcaption></figure>
-        <figure><img src="{{R}}assets/academy/ra-scenario.jpg" width="640" height="1385" alt="{{scr3}}" loading="lazy"><figcaption>{{scr3}}</figcaption></figure>
-        <figure><img src="{{R}}assets/academy/ra-crisis.jpg" width="640" height="1385" alt="{{scr4}}" loading="lazy"><figcaption>{{scr4}}</figcaption></figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="section product" aria-labelledby="areas-h">
-    <div class="wrap">
-      <h2 id="areas-h">{{areas_h}}</h2>
-      <p class="intro">{{areas_intro}}</p>
-      <div class="areas">
-        <div><img src="{{R}}assets/academy/faculty-ready.svg" width="160" height="100" alt="" loading="lazy"><h3>{{ar1_h}}</h3><p>{{ar1_p}}</p></div>
-        <div><img src="{{R}}assets/academy/faculty-med.svg" width="160" height="100" alt="" loading="lazy"><h3>{{ar2_h}}</h3><p>{{ar2_p}}</p></div>
-        <div><img src="{{R}}assets/academy/faculty-nav.svg" width="160" height="100" alt="" loading="lazy"><h3>{{ar3_h}}</h3><p>{{ar3_p}}</p></div>
-        <div><img src="{{R}}assets/academy/faculty-psych.svg" width="160" height="100" alt="" loading="lazy"><h3>{{ar4_h}}</h3><p>{{ar4_p}}</p></div>
-        <div><img src="{{R}}assets/academy/faculty-threats.svg" width="160" height="100" alt="" loading="lazy"><h3>{{ar5_h}}</h3><p>{{ar5_p}}</p></div>
-        <div><img src="{{R}}assets/academy/faculty-field.svg" width="160" height="100" alt="" loading="lazy"><h3>{{ar6_h}}</h3><p>{{ar6_p}}</p></div>
-        <div><img src="{{R}}assets/academy/faculty-nature.svg" width="160" height="100" alt="" loading="lazy"><h3>{{ar7_h}}</h3><p>{{ar7_p}}</p></div>
-        <div><img src="{{R}}assets/academy/faculty-lectorium.svg" width="160" height="100" alt="" loading="lazy"><h3>{{ar8_h}}</h3><p>{{ar8_p}}</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="how-h">
-    <div class="wrap">
-      <h2 id="how-h">{{act_h}}</h2>
-      <ul class="facts">
-        <li><b>{{fa1_b}}</b><span>{{fa1}}</span></li>
-        <li><b>{{fa2_b}}</b><span>{{fa2}}</span></li>
-        <li><b>{{fa3_b}}</b><span>{{fa3}}</span></li>
-        <li><b>{{fa4_b}}</b><span>{{fa4}}</span></li>
-        <li><b>{{fa5_b}}</b><span>{{fa5}}</span></li>
-        <li><b>{{fa6_b}}</b><span>{{fa6}}</span></li>
-        <li><b>{{fa7_b}}</b><span>{{fa7}}</span></li>
-        <li><b>{{fa8_b}}</b><span>{{fa8}}</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section product" aria-labelledby="experts-h">
-    <div class="wrap">
-      <h2 id="experts-h">{{experts_h}}</h2>
-      <p class="intro">{{experts_intro}}</p>
-      <div class="exp">
-        <div><h4>{{ex1_h}}</h4><p>{{ex1_p}}</p></div>
-        <div><h4>{{ex2_h}}</h4><p>{{ex2_p}}</p></div>
-        <div><h4>{{ex3_h}}</h4><p>{{ex3_p}}</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="who-h">
-    <div class="wrap">
-      <h2 id="who-h">{{who_h}}</h2>
-      <div class="who">
-        <div><h3>{{w1_h}}</h3><p>{{w1_p}}</p></div>
-        <div><h3>{{w2_h}}</h3><p>{{w2_p}}</p></div>
-        <div><h3>{{w3_h}}</h3><p>{{w3_p}}</p></div>
-        <div><h3>{{w4_h}}</h3><p>{{w4_p}}</p></div>
-      </div>
-      <p class="intro" style="margin-top:48px">{{ta_note}}</p>
-    </div>
-  </section>
+  <div class="wrap dir-legal"><a href="{{R}}academy/privacy.html">{{f_privacy}}</a></div>
 </main>
 {{>_foot}}
