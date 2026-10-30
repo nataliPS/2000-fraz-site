@@ -312,8 +312,6 @@ p{margin:0}
 
 .products{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .pcard h3{font-size:26px}
-.pcard.cservice .band{background:#2F3B2A}
-.pcard.cservice .band img{border-radius:28px;max-height:128px}
 .status.concept{color:#5B6352}
 
 .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
@@ -425,7 +423,7 @@ p{margin:0}
 
 /* ---------- місія, обіцянка, напрями ---------- */
 .mission{display:inline-block;color:var(--dawn);font-family:var(--head);font-weight:600;font-size:clamp(15px,1.5vw,18px);line-height:1.4;max-width:34em;margin-bottom:22px;padding-left:14px;border-left:3px solid var(--dawn)}
-.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.products{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .pcard.chealth{border-style:dashed}
 .pcard.chealth .band{background:#FCEDEA}
 .pledge{background:var(--night);color:var(--on-night)}
@@ -436,10 +434,10 @@ p{margin:0}
 .pledges svg{width:40px;height:40px;color:var(--dawn)}
 .pledges h3{font-size:24px;font-weight:600;margin-top:18px;color:var(--on-night)}
 .pledges p{margin-top:10px;color:var(--on-night-soft)}
-.path{grid-template-columns:repeat(6,minmax(0,1fr));gap:20px}
+.path{grid-template-columns:repeat(5,minmax(0,1fr));gap:20px}
 .path h3{font-size:19px}
 .path p{font-size:15px}
-@media (max-width:1000px){.path{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:1000px){.path{grid-template-columns:repeat(3,minmax(0,1fr))}.products{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:900px){
   .products,.pledges{grid-template-columns:minmax(0,1fr)}
   .path{grid-template-columns:minmax(0,1fr)}
@@ -515,7 +513,7 @@ h1,h2,h3,h4{color:inherit}
 .section.pledge .intro,.section.partners .intro{color:var(--on-night-soft)}
 .lighttop .sky{padding-top:136px}
 
-/* =========== Інтерактив і PSDinfo Academy (2026-10-20) =========== */
+/* =========== Інтерактив (2026-10-20) =========== */
 /* смуга прогресу прокручування */
 .progress{position:fixed;left:0;top:0;height:3px;width:100%;background:var(--dawn);transform-origin:0 50%;transform:scaleX(0);z-index:50;pointer-events:none}
 
@@ -543,7 +541,6 @@ h1,h2,h3,h4{color:inherit}
 @keyframes xin{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 .xphone{background:#0B2E2B;border-radius:38px;padding:9px;box-shadow:0 30px 60px rgba(15,76,71,.25);transition:transform .4s ease;will-change:transform}
 .xphone img{border-radius:30px}
-.xpsd .xphone{background:#15181B}
 .xtext h3{font-size:clamp(28px,3vw,38px);font-weight:800;letter-spacing:-.02em;color:var(--night)}
 .xlabel{margin-top:22px;font-family:var(--head);font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:#8A5A12}
 .xproblem{margin-top:6px;font-size:19px;color:var(--ink)}
@@ -555,27 +552,6 @@ h1,h2,h3,h4{color:inherit}
 .btn-night{background:var(--night);color:#fff}
 .btn-night:hover{background:var(--night-2);color:#fff}
 
-/* PSDinfo Academy: графіт і золото */
-.p-psdinfo{--hero:#15181B;--hero-soft:#C4CACE;--p-accent:#C9A24A;--p-accent-ink:#15181B}
-.p-psdinfo .btn-sun{background:var(--p-accent);color:var(--p-accent-ink)}
-.p-psdinfo .sky{color:#ECE8DF}
-.psd-badge{font-family:var(--head);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:14px;color:#C9A24A;margin-bottom:18px}
-.psd-badge span{color:#ECE8DF}
-.psd-hero .hero-grid h1{font-size:clamp(44px,5.6vw,80px)}
-.psd-phones::before{background:#C9A24A;opacity:.18}
-.psd-phones .phone{background:#0B0D0F;box-shadow:0 30px 70px rgba(0,0,0,.55),0 0 0 1px rgba(201,162,74,.35) inset}
-.pcard.cpsd .band{background:#EEEBE0}
-.pcard.cpsd .band img{border-radius:28px;max-height:128px}
-.shots6{grid-template-columns:repeat(6,minmax(0,1fr));gap:20px}
-.shots6 figcaption{font-size:15px}
-.disc{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
-.disc li{background:var(--paper);border-radius:24px;padding:24px;box-shadow:0 0 0 1px var(--line)}
-.disc b{font-family:var(--head);font-weight:800;color:#8A6A1F;font-size:15px;letter-spacing:.08em}
-.disc h3{margin-top:10px;font-size:20px;font-weight:700;color:var(--night)}
-.disc p{margin-top:6px;color:var(--ink-soft);font-size:15px;line-height:1.45}
-.feats{grid-template-columns:repeat(3,minmax(0,1fr))}
-.plans3{grid-template-columns:repeat(3,minmax(0,1fr))}
-.plans3 .plan p{margin-top:12px;color:var(--ink-soft)}
 
 /* живий герой: телефони з'являються, сонце дихає */
 @media (prefers-reduced-motion:no-preference){
@@ -594,19 +570,11 @@ h1,h2,h3,h4{color:inherit}
   @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 }
 
-@media (max-width:1000px){
-  .shots6{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .disc{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .feats,.plans3{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
 @media (max-width:900px){
   .xpanel{grid-template-columns:minmax(0,1fr);padding:28px 22px;gap:28px}
   .xphone{max-width:240px;margin:0 auto}
-  .feats,.plans3{grid-template-columns:minmax(0,1fr)}
 }
 @media (max-width:600px){
-  .shots6{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .disc{grid-template-columns:minmax(0,1fr)}
   .xtabs button{font-size:15px;padding:8px 16px 8px 8px}
 }
 
@@ -616,7 +584,6 @@ h1,h2,h3,h4{color:inherit}
 .xtabs .xti{width:36px;height:36px;border-radius:10px;background:var(--mist);display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}
 .xpanel.xonly{grid-template-columns:140px minmax(0,1fr);align-items:start}
 .xmark{width:140px;height:140px;border-radius:32px;background:#F3F0E8;display:flex;align-items:center;justify-content:center}
-.xpsd .xmark{background:#EEEBE0}
 .xonly .xtext .status{margin-bottom:12px}
 .dir-hero{padding-bottom:96px}
 .dir-hero .lead{max-width:36em}
