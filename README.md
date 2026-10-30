@@ -8,7 +8,6 @@
 | Company (EN) | `en/index.html` |
 | Продукт «2000 фраз» | `2000/index.html` |
 | Напрям «Цивільна безпека» (коротка сторінка) | `academy/index.html` |
-| Напрям «Професійна підготовка» з PSDinfo (коротка сторінка) | `psdinfo/index.html` |
 | Підтримка (Support URL для App Store) | `support.html` |
 | Політика конфіденційності «2000 фраз» (Privacy URL) | `privacy.html` |
 | Політика конфіденційності застосунку напряму «Цивільна безпека» (Privacy URL для App Store, ручна; не видаляти й не переносити) | `academy/privacy.html` |
