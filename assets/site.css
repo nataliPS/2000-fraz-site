@@ -564,7 +564,7 @@ h1,h2,h3,h4{color:inherit}
 .psd-hero .hero-grid h1{font-size:clamp(44px,5.6vw,80px)}
 .psd-phones::before{background:#C9A24A;opacity:.18}
 .psd-phones .phone{background:#0B0D0F;box-shadow:0 30px 70px rgba(0,0,0,.55),0 0 0 1px rgba(201,162,74,.35) inset}
-.pcard.cpsd .band{background:#15181B}
+.pcard.cpsd .band{background:#EEEBE0}
 .pcard.cpsd .band img{border-radius:28px;max-height:128px}
 .shots6{grid-template-columns:repeat(6,minmax(0,1fr));gap:20px}
 .shots6 figcaption{font-size:15px}
@@ -608,4 +608,23 @@ h1,h2,h3,h4{color:inherit}
   .shots6{grid-template-columns:repeat(2,minmax(0,1fr))}
   .disc{grid-template-columns:minmax(0,1fr)}
   .xtabs button{font-size:15px;padding:8px 16px 8px 8px}
+}
+
+/* короткі сторінки напрямів і текстові картки (2026-10-30) */
+.phones-one{display:flex;align-items:center;justify-content:center}
+.phones-one .phone.p1{position:relative;left:auto;top:auto}
+.xtabs .xti{width:36px;height:36px;border-radius:10px;background:var(--mist);display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}
+.xpanel.xonly{grid-template-columns:140px minmax(0,1fr);align-items:start}
+.xmark{width:140px;height:140px;border-radius:32px;background:#F3F0E8;display:flex;align-items:center;justify-content:center}
+.xpsd .xmark{background:#EEEBE0}
+.xonly .xtext .status{margin-bottom:12px}
+.dir-hero{padding-bottom:96px}
+.dir-hero .lead{max-width:36em}
+.dir-kicker{font-family:var(--head);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:14px;color:var(--p-accent);margin-bottom:18px}
+.dir-legal{padding-top:20px;padding-bottom:20px;font-size:15px}
+.dir-legal a{color:var(--ink-soft)}
+@media (max-width:900px){
+  .xpanel.xonly{grid-template-columns:minmax(0,1fr)}
+  .xmark{width:88px;height:88px;border-radius:24px}
+  .xmark svg{width:60px;height:60px}
 }
